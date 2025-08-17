@@ -1,5 +1,5 @@
-import SplitText from "../prebuilt/SplitText";
-import DecryptedText from "../prebuilt/DecryptedText";
+import SplitText from "./prebuilt/SplitText";
+import DecryptedText from "./prebuilt/DecryptedText";
 import { useState } from "react";
 import ProfilePicture from "../assets/profile-picture.jpg"; // Adjust the path as needed
 

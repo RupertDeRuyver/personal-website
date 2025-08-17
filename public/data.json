@@ -1,0 +1,264 @@
+{
+    "educations": 
+    [
+        {
+            "id": "ugent",
+            "name":
+                "Bachelor of Science in Engineering Technology (Computer Science)",
+            "institution": "Ghent University",
+            "period": "2023 - 2026",
+            "location": "Ghent",
+            "achievements": [
+                "Front- & Back-End Development",
+                "Low Level Programming",
+                "Design Patterns"
+            ],
+            "skills": [
+                "python",
+                "js",
+                "ts",
+                "java",
+                "c",
+                "cpp",
+                "c-sharp",
+                "kotlin",
+                "sql",
+                "bash",
+                "html",
+                "css",
+                "bootstrap",
+                "nodejs",
+                "angular",
+                "android",
+                "linux",
+                "git",
+                "pocketbase",
+                "regex"
+            ]
+        },
+        {
+            "id": "olvc",
+            "name": "Science-Mathematics",
+            "institution": "Onze-Lieve-Vrouwcollege Zottegem campus Bevegem",
+            "period": "2017 - 2023",
+            "location": "Zottegem",
+            "achievements": [
+                "Voorzitter leerlingenraad",
+                "Lid institutionraad",
+                "Organisatie fuif (College TD 2023)"
+            ]
+        }
+    ],
+
+    "experiences": 
+    [
+        {
+            "id": "redder",
+            "name": "Redder",
+            "institution": "Stad Zottegem",
+            "period": "2023 - heden",
+            "location": "Zottegem"
+        },
+        {
+            "id": "leider",
+            "name": "Leider",
+            "institution": "Scouts Zottegem",
+            "period": "2024 - heden",
+            "location": "Zottegem",
+            "achievements": ["Werken met kinderen"]
+        }
+    ],
+
+    "projects":
+    [
+        {
+            "id": "homelab",
+            "name": "Homelab",
+            "description": "An old PC turned into a fully fledged home server running multiple VM's and dozens of containers 24/7! This very website is server to you via this server.",
+            "skills": [
+                "docker",
+                "proxmox",
+                "linux",
+                "cloudflare"
+            ]
+        },
+        {
+            "id": "wesbite",
+            "name": "Website",
+            "description": "The website you're currently looking at!",
+            "skills": [
+                "react",
+                "ts",
+                "html",
+                "css",
+                "tailwind"
+            ]
+        }
+    ],
+
+    "skills": 
+    [
+        {
+            "id": "python",
+            "name": "Python",
+            "description": "",
+            "type": "programming-language"
+        },
+        {
+            "id": "js",
+            "name": "JavaScript",
+            "description": "",
+            "type": "programming-language"
+        },
+        {
+            "id": "ts",
+            "name": "TypeScript",
+            "description": "",
+            "type": "programming-language"
+        },
+        {
+            "id": "java",
+            "name": "Java",
+            "description": "",
+            "type": "programming-language"
+        },
+        {
+            "id": "c",
+            "name": "C",
+            "description": "",
+            "type": "programming-language"
+        },
+        {
+            "id": "cpp",
+            "name": "C++",
+            "description": "",
+            "type": "programming-language"
+        },
+        {
+            "id": "c-sharp",
+            "name": "C#",
+            "description": "",
+            "type": "programming-language"
+        },
+        {
+            "id": "lua",
+            "name": "Lua",
+            "description": "",
+            "type": "programming-language"
+        },
+        {
+            "id": "kotlin",
+            "name": "Kotlin",
+            "description": "",
+            "type": "programming-language"
+        },
+        {
+            "id": "sql",
+            "name": "SQL",
+            "description": "",
+            "type": "programming-language"
+        },
+        {
+            "id": "bash",
+            "name": "Bash",
+            "description": "",
+            "type": "programming-language"
+        },
+        {
+            "id": "html",
+            "name": "HTML",
+            "description": "",
+            "type": "programming-language"
+        },
+        {
+            "id": "css",
+            "name": "CSS",
+            "description": "",
+            "type": "programming-language"
+        },
+        {
+            "id": "bootstrap",
+            "name": "Bootstrap",
+            "description": "",
+            "type": "technical"
+        },
+        {
+            "id": "tailwind",
+            "name": "Tailwind",
+            "description": "",
+            "type": "technical"
+        },
+        {
+            "id": "nodejs",
+            "name": "Node.js",
+            "description": "",
+            "type": "technical"
+        },
+        {
+            "id": "docker",
+            "name": "Docker",
+            "description": "",
+            "type": "technical"
+        },
+        {
+            "id": "proxmox",
+            "name": "Proxmox",
+            "description": "",
+            "type": "technical"
+        },
+        {
+            "id": "angular",
+            "name": "Angular",
+            "description": "",
+            "type": "technical"
+        },
+        {
+            "id": "react",
+            "name": "React",
+            "description": "",
+            "type": "technical"
+        },
+        {
+            "id": "android",
+            "name": "Android Studio",
+            "description": "",
+            "type": "technical"
+        },
+        {
+            "id": "linux",
+            "name": "Linux",
+            "description": "",
+            "type": "technical"
+        },
+        {
+            "id": "git",
+            "name": "Git",
+            "description": "",
+            "type": "technical"
+        },
+        {
+            "id": "pocketbase",
+            "name": "Pocketbase",
+            "description": "",
+            "type": "technical"
+        },
+        {
+            "id": "wireshark",
+            "name": "Wireshark",
+            "description": "",
+            "type": "technical"
+        },
+        {
+            "id": "regex",
+            "name": "Regex",
+            "description": "",
+            "type": "technical"
+        },
+        {
+            "id": "cloudflare",
+            "name": "Cloudflare",
+            "description": "",
+            "type": "technical"
+        }
+    ]
+}
