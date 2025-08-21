@@ -1,8 +1,8 @@
 {
     "educations": 
-    [
+    {
+        "ugent":
         {
-            "id": "ugent",
             "name":
                 "Bachelor of Science in Engineering Technology (Computer Science)",
             "institution": "Ghent University",
@@ -36,8 +36,9 @@
                 "regex"
             ]
         },
+
+        "olvc":
         {
-            "id": "olvc",
             "name": "Science-Mathematics",
             "institution": "Onze-Lieve-Vrouwcollege Zottegem campus Bevegem",
             "period": "2017 - 2023",
@@ -48,31 +49,33 @@
                 "Organisatie fuif (College TD 2023)"
             ]
         }
-    ],
+    },
 
     "experiences": 
-    [
+    {
+        "redder":
         {
-            "id": "redder",
             "name": "Redder",
             "institution": "Stad Zottegem",
             "period": "2023 - heden",
-            "location": "Zottegem"
+            "location": "Zottegem",
+            "achievements": []
         },
+
+        "leider":
         {
-            "id": "leider",
             "name": "Leider",
             "institution": "Scouts Zottegem",
             "period": "2024 - heden",
             "location": "Zottegem",
             "achievements": ["Werken met kinderen"]
         }
-    ],
+    },
 
     "projects":
-    [
+    {
+        "homelab":
         {
-            "id": "homelab",
             "name": "Homelab",
             "description": "An old PC turned into a fully fledged home server running multiple VM's and dozens of containers 24/7! This very website is server to you via this server.",
             "skills": [
@@ -82,8 +85,9 @@
                 "cloudflare"
             ]
         },
+
+        "website":
         {
-            "id": "wesbite",
             "name": "Website",
             "description": "The website you're currently looking at!",
             "skills": [
@@ -94,171 +98,197 @@
                 "tailwind"
             ]
         }
-    ],
+    },
 
     "skills": 
-    [
+    {
+        "python":
         {
-            "id": "python",
             "name": "Python",
             "description": "",
             "type": "programming-language"
         },
+
+        "js":
         {
-            "id": "js",
             "name": "JavaScript",
             "description": "",
             "type": "programming-language"
         },
+
+        "ts":
         {
-            "id": "ts",
             "name": "TypeScript",
             "description": "",
             "type": "programming-language"
         },
+
+        "java":
         {
-            "id": "java",
             "name": "Java",
             "description": "",
             "type": "programming-language"
         },
+
+        "c":
         {
-            "id": "c",
             "name": "C",
             "description": "",
             "type": "programming-language"
         },
+
+        "cpp":
         {
-            "id": "cpp",
             "name": "C++",
             "description": "",
             "type": "programming-language"
         },
+
+        "c-sharp":
         {
-            "id": "c-sharp",
             "name": "C#",
             "description": "",
             "type": "programming-language"
         },
+
+        "lua":
         {
-            "id": "lua",
             "name": "Lua",
             "description": "",
             "type": "programming-language"
         },
+
+        "kotlin":
         {
-            "id": "kotlin",
             "name": "Kotlin",
             "description": "",
             "type": "programming-language"
         },
+
+        "sql":
         {
-            "id": "sql",
             "name": "SQL",
             "description": "",
             "type": "programming-language"
         },
+
+        "bash":
         {
-            "id": "bash",
             "name": "Bash",
             "description": "",
             "type": "programming-language"
         },
+
+        "html":
         {
-            "id": "html",
             "name": "HTML",
             "description": "",
             "type": "programming-language"
         },
+
+        "css":
         {
-            "id": "css",
             "name": "CSS",
             "description": "",
             "type": "programming-language"
         },
+
+        "bootstrap":
         {
-            "id": "bootstrap",
             "name": "Bootstrap",
             "description": "",
             "type": "technical"
         },
+
+        "tailwind":
         {
-            "id": "tailwind",
             "name": "Tailwind",
             "description": "",
             "type": "technical"
         },
+
+        "nodejs":
         {
-            "id": "nodejs",
             "name": "Node.js",
             "description": "",
             "type": "technical"
         },
+
+        "docker":
         {
-            "id": "docker",
             "name": "Docker",
             "description": "",
             "type": "technical"
         },
+
+        "proxmox":
         {
-            "id": "proxmox",
             "name": "Proxmox",
             "description": "",
             "type": "technical"
         },
+
+        "angular":
         {
-            "id": "angular",
             "name": "Angular",
             "description": "",
             "type": "technical"
         },
+
+        "react":
         {
-            "id": "react",
             "name": "React",
             "description": "",
             "type": "technical"
         },
+
+        "android":
         {
-            "id": "android",
             "name": "Android Studio",
             "description": "",
             "type": "technical"
         },
+
+        "linux":
         {
-            "id": "linux",
             "name": "Linux",
             "description": "",
             "type": "technical"
         },
+
+        "git":
         {
-            "id": "git",
             "name": "Git",
             "description": "",
             "type": "technical"
         },
+
+        "pocketbase":
         {
-            "id": "pocketbase",
             "name": "Pocketbase",
             "description": "",
             "type": "technical"
         },
+
+        "wireshark":
         {
-            "id": "wireshark",
             "name": "Wireshark",
             "description": "",
             "type": "technical"
         },
+
+        "regex":
         {
-            "id": "regex",
             "name": "Regex",
             "description": "",
             "type": "technical"
         },
+
+        "cloudflare":
         {
-            "id": "cloudflare",
             "name": "Cloudflare",
             "description": "",
             "type": "technical"
         }
-    ]
+    }
 }

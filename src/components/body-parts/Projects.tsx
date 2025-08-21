@@ -9,7 +9,7 @@ function Projects() {
         <h3 className="text-2xl font-bold text-gray-800">Projects</h3>
       </div>
       <div className="grid md:grid-cols-2 gap-6">
-        {data.projects.map((project) => (
+        {Object.values(data.projects).map((project) => (
           <div className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
             <div className="flex justify-between items-start mb-3">
               <h4 className="text-lg font-semibold text-gray-800">

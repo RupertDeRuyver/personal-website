@@ -12,7 +12,7 @@ function Skills() {
         <div>
           <h4 className="font-semibold text-gray-700 mb-3">Technical Skills</h4>
           <div className="flex flex-wrap gap-2">
-            {data.skills.map((skill) => (
+            {Object.values(data.skills).map((skill) => (
               <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
                 {skill.name}
               </span>

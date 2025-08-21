@@ -3,7 +3,7 @@ import ExperienceItem from "../reusable-components/ExperienceItem";
 import data from "../../../public/data.json";
 
 function Education() {
-  if (data.educations.length !== 0) {
+  if (Object.values(data.educations).length !== 0) {
     return (
       <>
         <div className="flex items-center gap-2 mb-4">
@@ -11,7 +11,7 @@ function Education() {
           <h3 className="text-2xl font-bold text-gray-800">Education</h3>
         </div>
         <div className="space-y-6">
-          {data.educations.map((education) => (
+          {Object.values(data.educations).map((education) => (
             <ExperienceItem
               title={education.name}
               company={education.institution}
