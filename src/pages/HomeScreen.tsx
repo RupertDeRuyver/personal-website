@@ -24,7 +24,8 @@ function HomeScreen() {
             {Object.entries(data.experiences).map(([id, experience]) => {
               return (
                 <ExperienceItem
-                  key={id}
+                  id={id}
+                  category="experiences"
                   name={experience.name}
                   institution={experience.institution}
                   period={experience.period}
@@ -40,7 +41,8 @@ function HomeScreen() {
             {Object.entries(data.educations).map(([id, education]) => {
               return (
                 <ExperienceItem
-                  key={id}
+                  id={id}
+                  category="educations"
                   name={education.name}
                   institution={education.institution}
                   period={education.period}

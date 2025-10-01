@@ -1,6 +1,9 @@
 import { Box, Stack, Typography } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 interface Props {
+  id: string;
+  category: string;
   name: string;
   institution: string;
   period: string;
@@ -8,13 +11,18 @@ interface Props {
 }
 
 function ExperienceItem({
+  id,
+  category,
   name,
   institution,
   period,
   achievements,
 }: Props) {
+
+  const navigate = useNavigate();
+
   return (
-    <Box>
+    <Box onClick={() => {navigate(`/${category}/${id}`)}} sx={{ cursor: 'pointer' }}>
       <Stack spacing={0}>
         <Typography color="text.primary" fontWeight="400" fontSize="1.7rem">
           {name}

@@ -12,6 +12,7 @@ import "@fontsource/roboto/600.css";
 import "@fontsource/roboto/700.css";
 import "@fontsource/roboto/800.css";
 import "@fontsource/roboto/900.css";
+import { BrowserRouter } from 'react-router-dom';
 
 
 const theme = createTheme({
@@ -32,7 +33,9 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </ThemeProvider>
   </StrictMode>
 );
