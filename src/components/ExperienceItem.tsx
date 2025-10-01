@@ -1,48 +1,41 @@
-import { Calendar, MapPin } from "lucide-react";
+import { Box, Stack, Typography } from "@mui/material";
 
 interface Props {
-  title: string;
-  company: string;
+  name: string;
+  institution: string;
   period: string;
-  location?: string;
   achievements?: string[];
 }
 
 function ExperienceItem({
-  title,
-  company,
+  name,
+  institution,
   period,
-  location,
   achievements,
 }: Props) {
   return (
-    <div className="border-l-4 border-blue-200 pl-6">
-      <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-        <div>
-          <h4 className="text-xl font-semibold text-gray-800">{title}</h4>
-          <p className="text-blue-600 font-medium">{company}</p>
-        </div>
-        <div className="text-sm text-gray-600 mt-1 md:mt-0 md:text-right">
-          <div className="flex items-center gap-1">
-            <Calendar className="w-4 h-4" />
-            {period}
-          </div>
-          {location !== undefined && (
-            <div className="flex items-center gap-1 mt-1">
-              <MapPin className="w-4 h-4" />
-              {location}
-            </div>
-          )}
-        </div>
-      </div>
-      {achievements !== undefined && achievements.length !== 0 && (
-        <ul className="list-disc list-inside space-y-1 text-gray-700">
-          {achievements.map((achievement, i) => (
-            <li key={i}>{achievement}</li>
+    <Box>
+      <Stack spacing={0}>
+        <Typography color="text.primary" fontWeight="400" fontSize="1.7rem">
+          {name}
+        </Typography>
+        <Typography color="text.primary" fontWeight="300" fontSize="1.4rem">
+          {institution}
+        </Typography>
+        <Typography color="text.secondary" fontWeight="300" fontSize="1.0rem">
+          {period}
+        </Typography>
+      </Stack>
+      {achievements && (
+        <Stack sx={{ mt: 0.5 }}>
+          {achievements.map((achievement) => (
+            <Typography color="text.primary" fontSize="1.0rem">
+              {achievement}
+            </Typography>
           ))}
-        </ul>
+        </Stack>
       )}
-    </div>
+    </Box>
   );
 }
 

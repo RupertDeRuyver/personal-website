@@ -6,10 +6,11 @@ function Header() {
   return (
     <Paper
       square
+      elevation={8}
       sx={{
         width: "100%",
         height: "100vh",
-        bgcolor: "background.paper",
+        bgcolor: "#14213d",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -24,10 +25,10 @@ function Header() {
           height: 250,
         }}
       />
-      <Typography variant="h1" fontWeight="bold" color="text.primary">
+      <Typography variant="h1" fontWeight="bold" color="text.disabled">
         Rupert De Ruyver
       </Typography>
-      <Typography variant="h4" color="text.secondary">
+      <Typography variant="h4" color="text.disabled">
         Student Industrieel Ingenieur Informatica
       </Typography>
     </Paper>
