@@ -4,10 +4,9 @@
         "ugent":
         {
             "name":
-                "Bachelor of Science in Engineering Technology (Computer Science)",
+                "Computer Science Engineering",
             "institution": "Ghent University",
-            "period": "2023 - 2026",
-            "location": "Ghent",
+            "period": "2023 - 2027",
             "achievements": [
                 "Front- & Back-End Development",
                 "Low Level Programming",
@@ -42,7 +41,6 @@
             "name": "Science-Mathematics",
             "institution": "Onze-Lieve-Vrouwcollege Zottegem campus Bevegem",
             "period": "2017 - 2023",
-            "location": "Zottegem",
             "achievements": [
                 "Voorzitter leerlingenraad",
                 "Lid institutionraad",
@@ -58,7 +56,6 @@
             "name": "Redder",
             "institution": "Stad Zottegem",
             "period": "2023 - heden",
-            "location": "Zottegem",
             "achievements": []
         },
 
@@ -67,7 +64,6 @@
             "name": "Leider",
             "institution": "Scouts Zottegem",
             "period": "2024 - heden",
-            "location": "Zottegem",
             "achievements": ["Werken met kinderen"]
         }
     },
