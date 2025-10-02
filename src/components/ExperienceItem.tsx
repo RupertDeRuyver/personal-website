@@ -22,9 +22,19 @@ function ExperienceItem({
   const navigate = useNavigate();
 
   return (
-    <Box 
-      onClick={() => {navigate(`/${category}/${id}`)}}
-      sx={{ cursor: 'pointer' }}
+    <Box
+      onClick={() => {
+        navigate(`/${category}/${id}`);
+      }}
+      sx={{
+        cursor: "pointer",
+        p: 1,
+        borderRadius: 3,
+        transition: "background-color 0.3s",
+        "&:hover": {
+          bgcolor: "#c8d9ffff",
+        },
+      }}
     >
       <Stack spacing={0}>
         <Typography color="text.primary" fontWeight="400" fontSize="1.7rem">

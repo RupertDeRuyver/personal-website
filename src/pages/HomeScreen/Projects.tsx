@@ -25,6 +25,10 @@ function Projects({projects} : {projects: Record<string, Project>}) {
                     cursor: "pointer",
                     height: "15vw",
                     borderRadius: 7,
+                    transition: "background-color 0.3s",
+                    "&:hover": {
+                      bgcolor: "#a0c4ff",
+                    },
                   }}
                 >
                   <CardContent>
