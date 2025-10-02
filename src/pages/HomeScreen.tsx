@@ -1,10 +1,13 @@
-import { Box, Divider, Stack, Typography } from "@mui/material";
+import { Box, Card, CardContent, Divider, Grid, Stack, Typography } from "@mui/material";
 import Header from "./HomeScreen/Header";
 import Section from "../components/Section";
 import ExperienceItem from "../components/ExperienceItem";
 import data from "../../public/data.json";
+import { useNavigate } from "react-router-dom";
 
 function HomeScreen() {
+   const navigate = useNavigate();
+   
   return (
     <Box sx={{ bgcolor: "background.default" }}>
       <Header />
@@ -54,7 +57,31 @@ function HomeScreen() {
         </Section>
 
         <Section title="Projects">
-          Hello World!
+          <Grid container spacing={2}>
+            {Object.entries(data.projects).map(([id, project]) => {
+              return (
+                <Grid size={4}>
+                  <Card
+                    onClick={() => navigate(`/projects/${id}`)}
+                    variant="outlined"
+                    sx={{
+                      bgcolor: "#c8d9ffff",
+                      cursor: "pointer",
+                      height: "15vw",
+                      borderRadius: 7
+                    }}
+                  >
+                    <CardContent>
+                      <Typography variant="h6">{project.name}</Typography>
+                      <Typography variant="body2" color="text.secondary">
+                        {project.description}
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </Grid>
+              );
+            })}
+          </Grid>
         </Section>
       </Box>
     </Box>
