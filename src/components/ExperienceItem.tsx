@@ -22,7 +22,10 @@ function ExperienceItem({
   const navigate = useNavigate();
 
   return (
-    <Box onClick={() => {navigate(`/${category}/${id}`)}} sx={{ cursor: 'pointer' }}>
+    <Box 
+      onClick={() => {navigate(`/${category}/${id}`)}}
+      sx={{ cursor: 'pointer' }}
+    >
       <Stack spacing={0}>
         <Typography color="text.primary" fontWeight="400" fontSize="1.7rem">
           {name}
