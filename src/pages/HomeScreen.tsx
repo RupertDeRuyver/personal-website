@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import Header from "./HomeScreen/Header";
-import data from "../../public/data.json";
+import data from "../assets/data.json";
 import Education from "./HomeScreen/Education";
 import Experience from "./HomeScreen/Experience";
 import Projects from "./HomeScreen/Projects";
