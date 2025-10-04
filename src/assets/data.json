@@ -35,7 +35,10 @@
                 "linux",
                 "git",
                 "pocketbase",
-                "regex"
+                "regex",
+                "docker",
+                "kubernetes",
+                "devops"
             ]
         },
 
@@ -45,29 +48,51 @@
             "institution": "Onze-Lieve-Vrouwcollege Zottegem campus Bevegem",
             "period": "2017 - 2023",
             "achievements": [
-                "Voorzitter leerlingenraad",
-                "Lid institutionraad",
-                "Organisatie fuif (College TD 2023)"
+                "Head of the student council",
+                "Member of the school council",
+                "Lead organizer of College TD 2023",
+                "Financial manager for senior year activities"
+            ],
+            "skills": [
+                "organization"
             ]
         }
     },
 
     "experiences": 
     {
+        "groepsleiding": 
+        {
+            "name": "Groepsleiding",
+            "institution": "Scouts Zottegem",
+            "period": "2025 - heden",
+            "achievements": ["Responsible for the day-to-day management of our scouts group, which consists of over 250 members. This includes managing a team of 30+ leaders, and ensuring the smooth operation of our events and camps."],
+            "skills": [
+                "leadership",
+                "management",
+                "problem-solving"
+            ]
+        },
+
+        "leider":
+        {
+            "name": "Leiding",
+            "institution": "Scouts Zottegem",
+            "period": "2024 - heden",
+            "achievements": ["Every sunday morning I commit myself to entertain more than 30 kids. But there is more to being a leader than just that. I also help with the organisation of camps, hikes and other activities. Also communicating with parents is an important responsibility. Being a leader has taught me a lot about teamwork, responsibility and communication."],
+            "skills": [
+                "teamwork",
+                "communication",
+                "organization"
+            ]
+        },
+
         "redder":
         {
             "name": "Redder",
             "institution": "Stad Zottegem",
             "period": "2023 - heden",
             "achievements": []
-        },
-
-        "leider":
-        {
-            "name": "Leider",
-            "institution": "Scouts Zottegem",
-            "period": "2024 - heden",
-            "achievements": ["Werken met kinderen"]
         }
     },
 
@@ -76,12 +101,14 @@
         "homelab":
         {
             "name": "Homelab",
-            "description": "An old PC turned into a fully fledged home server running multiple VM's and dozens of containers 24/7! This very website is server to you via this server.",
+            "description": "An old PC turned into a fully fledged home server running multiple VM's and dozens of containers 24/7! This very website is served to you via this server.",
             "skills": [
                 "docker",
                 "proxmox",
                 "linux",
-                "cloudflare"
+                "cloudflare",
+                "networking",
+                "devops"
             ]
         },
 
@@ -94,7 +121,7 @@
                 "ts",
                 "html",
                 "css",
-                "tailwind"
+                "mui"
             ]
         },
 
@@ -161,13 +188,6 @@
         "c-sharp":
         {
             "name": "C#",
-            "description": "",
-            "type": "programming-language"
-        },
-
-        "lua":
-        {
-            "name": "Lua",
             "description": "",
             "type": "programming-language"
         },
@@ -317,6 +337,69 @@
             "name": "PostgreSQL",
             "description": "",
             "type": "technical"
+        },
+
+        "kubernetes":
+        {
+            "name": "Kubernetes",
+            "description": "",
+            "type": "technical"
+        },
+
+        "networking":
+        {
+            "name": "Networking",
+            "description": "",
+            "type": "technical"
+        },
+
+        "mui":
+        {
+            "name": "Material UI",
+            "description": "",
+            "type": "technical"
+        },
+
+        "communication":
+        {
+            "name": "Communication",
+            "description": "",
+            "type": "soft"
+        },
+
+        "organization":
+        {
+            "name": "Organization",
+            "description": "",
+            "type": "soft"
+        },
+
+        "devops":
+        {
+            "name": "DevOps",
+            "description": "",
+            "type": "technical"
+        },
+
+        "leadership":
+        {
+            "name": "Leadership",
+            "description": "",
+            "type": "soft"
+        },
+
+        "management":
+        {
+            "name": "Management",
+            "description": "",
+            "type": "soft"
+        },
+
+        "problem-solving":
+        {
+            "name": "Problem Solving",
+            "description": "",
+            "type": "soft"
         }
     },
 
@@ -336,5 +419,6 @@
         {
             "name": "Soft Skills"
         }
+        
     }
 }

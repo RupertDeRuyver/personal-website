@@ -7,6 +7,7 @@ interface Education {
   institution: string;
   period: string;
   achievements?: string[];
+  skills?: string[];
 }
 
 function Education({educations}:   {educations: Record<string, Education>}) {
@@ -22,6 +23,7 @@ function Education({educations}:   {educations: Record<string, Education>}) {
               institution={education.institution}
               period={education.period}
               achievements={education.achievements}
+              skills={education.skills}
             />
           );
         })}

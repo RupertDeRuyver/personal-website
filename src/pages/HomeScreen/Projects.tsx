@@ -1,11 +1,12 @@
 import { CardContent, Grid, Card, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import Section from "../../components/Section";
+import Skills from "../../components/Skills";
 
 interface Project {
   name: string;
   description: string;
-  skills: string[];
+  skills?: string[];
 }
 
 function Projects({projects} : {projects: Record<string, Project>}) {
@@ -16,14 +17,14 @@ function Projects({projects} : {projects: Record<string, Project>}) {
         <Grid container spacing={2}>
           {Object.entries(projects).map(([id, project]) => {
             return (
-              <Grid size={4}>
+              <Grid size={6}>
                 <Card
                   onClick={() => navigate(`/projects/${id}`)}
                   variant="outlined"
                   sx={{
                     bgcolor: "#c8d9ffff",
                     cursor: "pointer",
-                    height: "15vw",
+                    height: "20vw",
                     borderRadius: 7,
                     transition: "background-color 0.3s",
                     "&:hover": {
@@ -32,7 +33,10 @@ function Projects({projects} : {projects: Record<string, Project>}) {
                   }}
                 >
                   <CardContent>
-                    <Typography variant="h6">{project.name}</Typography>
+                    <Typography variant="h5">{project.name}</Typography>
+                    {project.skills && (
+                      <Skills ids={project.skills} />
+                    )}
                     <Typography variant="body2" color="text.secondary">
                       {project.description}
                     </Typography>

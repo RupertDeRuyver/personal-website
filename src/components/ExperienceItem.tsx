@@ -1,5 +1,6 @@
 import { Box, Stack, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import Skills from "./Skills";
 
 interface Props {
   id: string;
@@ -8,6 +9,7 @@ interface Props {
   institution: string;
   period: string;
   achievements?: string[];
+  skills?: string[];
 }
 
 function ExperienceItem({
@@ -17,6 +19,7 @@ function ExperienceItem({
   institution,
   period,
   achievements,
+  skills,
 }: Props) {
 
   const navigate = useNavigate();
@@ -30,14 +33,21 @@ function ExperienceItem({
         cursor: "pointer",
         p: 1,
         borderRadius: 3,
-        transition: "background-color 0.3s",
         "&:hover": {
-          bgcolor: "#c8d9ffff",
+          "& .name": {
+            color: "#1976d2",
+            textDecoration: "underline",
+          },
         },
       }}
     >
       <Stack spacing={0}>
-        <Typography color="text.primary" fontWeight="400" fontSize="1.7rem">
+        <Typography
+          className="name"
+          color="text.primary"
+          fontWeight="400"
+          fontSize="1.7rem"
+        >
           {name}
         </Typography>
         <Typography color="text.primary" fontWeight="300" fontSize="1.4rem">
@@ -46,6 +56,7 @@ function ExperienceItem({
         <Typography color="text.secondary" fontWeight="300" fontSize="1.0rem">
           {period}
         </Typography>
+        {skills && <Skills ids={skills} />}
       </Stack>
       {achievements && (
         <Stack sx={{ mt: 0.5 }}>
