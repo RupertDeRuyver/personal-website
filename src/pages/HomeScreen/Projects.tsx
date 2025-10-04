@@ -19,24 +19,24 @@ function Projects({projects} : {projects: Record<string, Project>}) {
             return (
               <Grid size={6}>
                 <Card
-                  onClick={() => navigate(`/projects/${id}`)}
                   variant="outlined"
+                  onClick={() => navigate(`/projects/${id}`)}
                   sx={{
-                    bgcolor: "#c8d9ffff",
+                    bgcolor: "#f8f8f8ff",
                     cursor: "pointer",
                     height: "20vw",
                     borderRadius: 7,
                     transition: "background-color 0.3s",
                     "&:hover": {
-                      bgcolor: "#a0c4ff",
+                      bgcolor: "#edededff"
                     },
                   }}
                 >
                   <CardContent>
-                    <Typography variant="h5">{project.name}</Typography>
-                    {project.skills && (
-                      <Skills ids={project.skills} />
-                    )}
+                    <Typography variant="h5" className="name">
+                      {project.name}
+                    </Typography>
+                    {project.skills && <Skills ids={project.skills} />}
                     <Typography variant="body2" color="text.secondary">
                       {project.description}
                     </Typography>
