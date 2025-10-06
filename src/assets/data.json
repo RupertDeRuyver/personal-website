@@ -6,6 +6,7 @@
     {
         "ugent":
         {
+            "icon": "ugent.png",
             "name":
                 "Computer Science Engineering",
             "institution": "Ghent University",
@@ -44,6 +45,7 @@
 
         "olvc":
         {
+            "icon": "olvc.png",
             "name": "Science-Mathematics",
             "institution": "Onze-Lieve-Vrouwcollege Zottegem campus Bevegem",
             "period": "2017 - 2023",
@@ -63,6 +65,7 @@
     {
         "groepsleiding": 
         {
+            "icon": "scouts.jpg",
             "name": "Groepsleiding",
             "institution": "Scouts Zottegem",
             "period": "2025 - heden",
@@ -76,6 +79,7 @@
 
         "leider":
         {
+            "icon": "scouts.jpg",
             "name": "Leiding",
             "institution": "Scouts Zottegem",
             "period": "2024 - heden",
@@ -89,6 +93,7 @@
 
         "redder":
         {
+            "icon": "redfed.png",
             "name": "Redder",
             "institution": "Stad Zottegem",
             "period": "2023 - heden",

@@ -8,6 +8,7 @@ interface Experience {
   period: string;
   achievements?: string[];
   skills?: string[];
+  icon?: string;
 }
 
 
@@ -25,6 +26,7 @@ function Experience({ experiences }: { experiences: Record<string, Experience> }
               period={experience.period}
               achievements={experience.achievements}
               skills={experience.skills}
+              icon={experience.icon}
             />
           );
         })}

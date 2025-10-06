@@ -8,9 +8,10 @@ interface Education {
   period: string;
   achievements?: string[];
   skills?: string[];
+  icon?: string;
 }
 
-function Education({educations}:   {educations: Record<string, Education>}) {
+function Education({educations}: {educations: Record<string, Education>}) {
   return (
     <Section title="Education">
       <Stack spacing={2} divider={<Divider />}>
@@ -24,6 +25,7 @@ function Education({educations}:   {educations: Record<string, Education>}) {
               period={education.period}
               achievements={education.achievements}
               skills={education.skills}
+              icon={education.icon}
             />
           );
         })}
