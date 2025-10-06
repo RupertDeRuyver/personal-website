@@ -6,13 +6,15 @@ interface Props {
 }
 
 function Skills({ ids }: Props) {
-
-  const skills = ids.map(id => data.skills[id]);
+  // @ts-expect-error: TS couldn't verify that id is a key of data.skills
+  const skills = ids.map((id) => data.skills[id]);
   return (
-    <Stack direction="row" gap={1} flexWrap="wrap" sx={{ my: 1}}>
-      {skills.sort((a, b) => a.name.localeCompare(b.name)).map((skill) => {
-        return <Chip label={skill.name} onClick={() => {}} />;
-      })}
+    <Stack direction="row" gap={1} flexWrap="wrap" sx={{ my: 1 }}>
+      {skills
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .map((skill) => {
+          return <Chip label={skill.name} onClick={() => {}} />;
+        })}
     </Stack>
   );
 }

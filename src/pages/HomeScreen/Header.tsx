@@ -16,6 +16,7 @@ function Header() {
         alignItems: "center",
         justifyContent: "center",
         gap: 2,
+        p: 2
       }}
     >
       <Avatar

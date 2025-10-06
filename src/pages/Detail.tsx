@@ -5,6 +5,7 @@ import data from "../assets/data.json";
 
 function Detail() {
   const { id, type } = useParams();
+  // @ts-expect-error: TS couldn't verify that type is a key of data and id is a key of data[type]
   const item = data[type][id];
   return (
     <Box sx={{ maxWidth: 900, mx: "auto", p: 2, pt: 6 }}>
