@@ -9,7 +9,7 @@ interface Props {
   name: string;
   institution: string;
   period: string;
-  achievements?: string[];
+  description?: string;
   skills?: string[];
   icon?: string;
 }
@@ -20,11 +20,10 @@ function ExperienceItem({
   name,
   institution,
   period,
-  achievements,
+  description,
   skills,
-  icon
+  icon,
 }: Props) {
-
   const navigate = useNavigate();
   const [iconLoaded, setIconLoaded] = useState(false);
 
@@ -95,17 +94,15 @@ function ExperienceItem({
             </Typography>
             {skills && <Skills ids={skills} />}
           </Stack>
-          {achievements && (
+          {description && (
             <Stack sx={{ mt: 0.5 }}>
-              {achievements.map((achievement) => (
-                <Typography
-                  color="text.primary"
-                  fontSize="1.0rem"
-                  sx={{ whiteSpace: "pre-line" }}
-                >
-                  {achievement}
-                </Typography>
-              ))}
+              <Typography
+                color="text.primary"
+                fontSize="1.0rem"
+                sx={{ whiteSpace: "pre-line" }}
+              >
+                {description}
+              </Typography>
             </Stack>
           )}
         </Grid>

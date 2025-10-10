@@ -1,31 +1,40 @@
 import { Stack, Divider } from "@mui/material";
 import ExperienceItem from "../../components/ExperienceItem";
 import Section from "../../components/Section";
-import Icon from '@mui/icons-material/Work';
+import Icon from "@mui/icons-material/Work";
+import { i18n } from "../../I18nService";
 
 interface Experience {
-  name: string;
-  institution: string;
-  period: string;
-  achievements?: string[];
+  name: Record<string, string>;
+  institution: Record<string, string>;
+  period: Record<string, string>;
+  description?: Record<string, string>;
   skills?: string[];
   icon?: string;
 }
 
+interface Props {
+  sections: Record<string, Record<string, string>>;
+  experiences: Record<string, Experience>;
+}
 
-function Experience({ experiences }: { experiences: Record<string, Experience> }) {
+function Experience({sections, experiences,}: Props) {
+
   return (
-    <Section title="Experience" icon={<Icon fontSize="large" sx={{ verticalAlign: 'middle', mr: 1 }} />} >
+    <Section
+      title={i18n.getString(sections.experience)!}
+      icon={<Icon fontSize="large" sx={{ verticalAlign: "middle", mr: 1 }} />}
+    >
       <Stack spacing={2} divider={<Divider />}>
         {Object.entries(experiences).map(([id, experience]) => {
           return (
             <ExperienceItem
               id={id}
               category="experiences"
-              name={experience.name}
-              institution={experience.institution}
-              period={experience.period}
-              achievements={experience.achievements}
+              name={i18n.getString(experience.name)!}
+              institution={i18n.getString(experience.institution)!}
+              period={i18n.getString(experience.period)!}
+              description={i18n.getString(experience.description)}
               skills={experience.skills}
               icon={experience.icon}
             />

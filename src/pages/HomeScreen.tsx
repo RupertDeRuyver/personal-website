@@ -7,24 +7,22 @@ import Projects from "./HomeScreen/Projects";
 import AboutMe from "./HomeScreen/AboutMe";
 
 function HomeScreen() {
-   
+
   return (
     <Box sx={{ bgcolor: "background.default" }}>
-
-      <Header />
+      <Header title={data.title} />
 
       <Box sx={{ maxWidth: 900, mx: "auto", p: 2, pt: 6 }}>
 
-        <AboutMe content={data.aboutme} />
+        <AboutMe sections={data.sections} content={data.aboutme} />
 
-        <Experience experiences={data.experiences} />
+        <Experience sections={data.sections} experiences={data.experiences} />
 
-        <Education educations={data.educations} />
+        <Education sections={data.sections} educations={data.educations} />
 
-        <Projects projects={data.projects} />
-        
+        <Projects sections={data.sections} projects={data.projects} />
+
       </Box>
-
     </Box>
   );
 }

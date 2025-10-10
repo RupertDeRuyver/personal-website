@@ -1,21 +1,52 @@
 {
-    "aboutme":
-        "Ik ben een gedreven student in het derde jaar van mijn opleiding tot Industrieel Ingenieur (Informatica). In mijn vrije tijd ben ik veel bezig met de scouts en werken aan mijn home server. Door dat laatste heb ik ervaring met onder andere Docker, Linux en netwerken kunnen opdoen.",
+    "title": {
+        "nl": "Student Industrieel Ingenieur Informatica",
+        "en": "Computer Science Engineering Student"
+    },
+
+    "sections": {
+        "aboutme": {
+            "nl": "Over mij",
+            "en": "About Me"
+        },
+        "education": {
+            "nl": "Opleidingen",
+            "en": "Educations"
+        },
+        "experience": {
+            "nl": "Ervaringen",
+            "en": "Experiences"
+        },
+        "projects": {
+            "nl": "Projecten",
+            "en": "Projects"
+        }
+    },
+
+    "aboutme": {
+        "nl": "Ik ben een gedreven student in het derde jaar van mijn opleiding tot Industrieel Ingenieur (Informatica). In mijn vrije tijd ben ik veel bezig met de scouts en werken aan mijn home server. Door dat laatste heb ik ervaring met onder andere Docker, Linux en netwerken kunnen opdoen.",
+        "en": "I am a motivated student in my third year of studying Computer Science Engineering. In my free time I am very active in the scouts and working on my home server. The latter has given me experience with Docker, Linux and networking among other things."
+    },
 
     "educations": 
     {
         "ugent":
         {
             "icon": "ugent.png",
-            "name":
-                "Computer Science Engineering",
-            "institution": "Ghent University",
-            "period": "2023 - 2027",
-            "achievements": [
-                "Front- & Back-End Development",
-                "Low Level Programming",
-                "Design Patterns"
-            ],
+            "name": {
+                "nl": "Industrieel Ingenieur Informatica",
+                "en": "Computer Science Engineering"
+            },
+            "institution": {
+                "nl": "Universiteit Gent",
+                "en": "Ghent University"
+            },
+            "period": {
+                "glob": "2023 - 2027"
+            },
+            "description": {
+                "glob": "Front- & Back-End Development\nLow Level Programming\nDesign Patterns"
+            },
             "skills": [
                 "python",
                 "js",
@@ -46,15 +77,20 @@
         "olvc":
         {
             "icon": "olvc.png",
-            "name": "Science-Mathematics",
-            "institution": "Onze-Lieve-Vrouwcollege Zottegem campus Bevegem",
-            "period": "2017 - 2023",
-            "achievements": [
-                "Head of the student council",
-                "Member of the school council",
-                "Lead organizer of College TD 2023",
-                "Financial manager for senior year activities"
-            ],
+            "name": {
+                "nl": "Wetenschappen-Wiskunde",
+                "en": "Science-Mathematics"
+            },
+            "institution": {
+                "glob": "Onze-Lieve-Vrouwcollege Zottegem campus Bevegem"
+            },
+            "period": {
+                "glob": "2017 - 2023"
+            },
+            "description": {
+                "nl": "Voorzitter van de leerlingenraad\nLid van de schoolraad\nHoofdorganisator schoolfuif College TD 2023\nFinancieel verantwoordelijke van de laatsejaarsactiviteiten",
+                "en": "Head of the student council\nMember of the school council\nLead organizer College TD 2023\nFinancial manager for senior year activities"
+            },
             "skills": [
                 "organization"
             ]
@@ -66,10 +102,21 @@
         "groepsleiding": 
         {
             "icon": "scouts.jpg",
-            "name": "Groepsleiding",
-            "institution": "Scouts Zottegem",
-            "period": "2025 - present",
-            "achievements": ["Responsible for the day-to-day management of our scouts group, which consists of over 250 members. This includes managing a team of 30+ leaders, and ensuring the smooth operation of our events and camps."],
+            "name": {
+                "nl": "Groepsleiding",
+                "en": "Group Leadership Team"
+            },
+            "institution": {
+                "glob": "Scouts Zottegem"
+            },
+            "period": {
+                "nl": "2025 - heden",
+                "en": "2025 - present"
+            },
+            "description": {
+                "nl": "Verantwoordelijk voor het dagelijks beheer van onze scouts groep, die uit meer dan 250 leden bestaat. Dit omvat het aansturen van een team van 30+ leiders en het waarborgen van een vlotte werking van onze evenementen en kampen.",
+                "en": "Responsible for the daily management of our scout group, which consists of more than 250 members. This includes leading a team of 30+ leaders and ensuring the smooth operation of our events and camps."
+            },
             "skills": [
                 "leadership",
                 "management",
@@ -80,10 +127,21 @@
         "leider":
         {
             "icon": "scouts.jpg",
-            "name": "Leiding",
-            "institution": "Scouts Zottegem",
-            "period": "2024 - present",
-            "achievements": ["Every sunday morning I commit myself to entertain more than 30 kids. But there is more to being a leader than just that. I also help with the organisation of camps, hikes and other activities. Also communicating with parents is an important responsibility. Being a leader has taught me a lot about teamwork, responsibility and communication."],
+            "name": {
+                "nl": "Leiding",
+                "en": "Leader"
+            },
+            "institution": {
+                "glob": "Scouts Zottegem"
+            },
+            "period": {
+                "nl": "2024 - heden",
+                "en": "2024 - present"
+            },
+            "description": {
+                "nl":  "Elke zondagochtend zet ik mij in om meer dan 30 kinderen te entertainen. Maar leiding zijn is meer dan alleen dat. Ik help ook mee met de organisatie van kampen, trektochten en andere activiteiten. Ook het communiceren met ouders is een belangrijke verantwoordelijkheid. Leiding zijn heeft mij veel geleerd over teamwork, verantwoordelijkheid en communicatie.",
+                "en": "Every sunday morning I commit myself to entertain more than 30 kids. But there is more to being a leader than just that. I also help with the organisation of camps, hikes and other activities. Also communicating with parents is an important responsibility. Being a leader has taught me a lot about teamwork, responsibility and communication."
+            },
             "skills": [
                 "teamwork",
                 "communication",
@@ -94,10 +152,18 @@
         "redder":
         {
             "icon": "redfed.png",
-            "name": "Redder",
-            "institution": "Stad Zottegem",
-            "period": "2023 - present",
-            "achievements": []
+            "name": {
+                "nl": "Redder",
+                "en": "Lifeguard"
+            },
+            "institution": {
+                "nl": "Stad Zottegem",
+                "en": "City of Zottegem"
+            },
+            "period": {
+                "en": "2023 - present",
+                "nl": "2023 - heden"
+            }
         }
     },
 
@@ -105,8 +171,13 @@
     {
         "homelab":
         {
-            "name": "Homelab",
-            "description": "An old PC turned into a fully fledged home server running multiple VM's and dozens of containers 24/7! This very website is served to you via this server.",
+            "name": {
+                "glob": "Home Server"
+            },
+            "description": {
+                "nl": "Een oude pc omgevormd tot een volwaardige home server die 24/7 meerdere VM's en tientallen containers draait! Deze website wordt via deze server aan jou aangeboden.",
+                "en": "An old PC turned into a fully fledged home server running multiple VM's and dozens of containers 24/7! This very website is served to you via this server."
+            },
             "skills": [
                 "docker",
                 "proxmox",
@@ -119,8 +190,13 @@
 
         "website":
         {
-            "name": "Personal Website",
-            "description": "The website you're currently looking at!",
+            "name": {
+                "glob": "Personal Website"
+            },
+            "description": {
+                "nl": "De website die je momenteel bekijkt!",
+                "en": "The website you are currently viewing!"
+            },
             "skills": [
                 "react",
                 "ts",
@@ -132,8 +208,13 @@
 
         "finance-manager":
         {
-            "name": "Finance Manager",
-            "description": "A personal finance manager to keep track of my expenses and income.",
+            "name": {
+                "glob": "Finance Manager"
+            },
+            "description": {
+                "nl": "Een persoonlijke financiële manager om mijn uitgaven en inkomsten bij te houden.",
+                "en": "A personal finance manager to keep track of my expenses and income."
+            },
             "skills": [
                 "react",
                 "ts",

@@ -1,7 +1,12 @@
 import { Avatar, Paper, Typography } from "@mui/material";
 import ProfilePicture from "../../assets/profile-picture.jpg";
+import { i18n } from "../../I18nService";
 
-function Header() {
+interface Props {
+    title: Record<string, string>;
+}
+
+function Header({ title }: Props) {
 
   return (
     <Paper
@@ -30,7 +35,7 @@ function Header() {
         Rupert De Ruyver
       </Typography>
       <Typography variant="h4" color="text.disabled">
-        Student Industrieel Ingenieur Informatica
+        {i18n.getString(title)}
       </Typography>
     </Paper>
   );
