@@ -1,14 +1,16 @@
-import { CardContent, Grid, Card, Typography } from "@mui/material";
+import { CardContent, Grid, Card, Typography, CardActions, Button } from "@mui/material";
 //import { useNavigate } from "react-router-dom";
 import Section from "../../components/Section";
 import Skills from "../../components/Skills";
 import { i18n } from "../../I18nService";
 import Icon from "@mui/icons-material/StorageRounded";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 interface Project {
   name: Record<string, string>;
   description: Record<string, string>;
   skills?: string[];
+  github?: string;
 }
 
 interface Props {
@@ -25,7 +27,7 @@ function Projects({ sections, projects }: Props) {
       icon={<Icon fontSize="large" sx={{ verticalAlign: "middle", mr: 2 }} />}
     >
       <Grid container spacing={2}>
-        {Object.entries(projects).map(([id, project]) => {
+        {Object.entries(projects).map(([ , project]) => {
           return (
             <Grid size={6}>
               <Card
@@ -34,12 +36,15 @@ function Projects({ sections, projects }: Props) {
                 sx={{
                   bgcolor: "#f8f8f8ff",
                   //cursor: "pointer",
-                  height: "20vw",
+                  height: "25vw",
                   borderRadius: 7,
                   transition: "background-color 0.3s",
                   //"&:hover": {
                   //  bgcolor: "#edededff",
                   //},
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
                 }}
               >
                 <CardContent>
@@ -47,10 +52,29 @@ function Projects({ sections, projects }: Props) {
                     {i18n.getString(project.name)}
                   </Typography>
                   {project.skills && <Skills ids={project.skills} />}
-                  <Typography variant="body2" color="text.secondary">
+                  <Typography
+                    variant="body2"
+                    color="text.secondary"
+                    align="justify"
+                  >
                     {i18n.getString(project.description)}
                   </Typography>
                 </CardContent>
+
+                {project.github && (
+                  <CardActions
+                    sx={{ justifyContent: "flex-end", pb: 2, pr: 2 }}
+                  >
+                    <Button
+                      size="small"
+                      color="primary"
+                      startIcon={<GitHubIcon />}
+                      onClick={() => window.open(project.github, "_blank")}
+                    >
+                      GitHub
+                    </Button>
+                  </CardActions>
+                )}
               </Card>
             </Grid>
           );

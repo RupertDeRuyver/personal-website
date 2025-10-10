@@ -70,7 +70,8 @@
                 "regex",
                 "docker",
                 "gitlab",
-                "devops"
+                "devops",
+                "assembly"
             ]
         },
 
@@ -175,8 +176,8 @@
                 "glob": "Home Server"
             },
             "description": {
-                "nl": "Een oude pc omgevormd tot een volwaardige home server die 24/7 meerdere VM's en tientallen containers draait! Deze website wordt via deze server aan jou aangeboden.",
-                "en": "An old PC turned into a fully fledged home server running multiple VM's and dozens of containers 24/7! This very website is served to you via this server."
+                "nl": "Een oude pc is omgebouwd tot een volwaardige thuisserver. Verschillende VM's en tientallen containers draaien erop om services te onderhouden die in mijn dagelijks leven onmisbaar zijn geworden. Van een zelfgehoste cloudprovider (Nextcloud) tot een in-house streamingdienst met geautomatiseerde aanvragen en downloads (Jellyfin). Van een veelzijdig smart home (Home Assistant) tot een eigen Google Foto's (Immich). De mogelijkheden zijn eindeloos.",
+                "en": "An old pc turned into a fully fledged home server. Running multiple VM's and dozens of containers to keep up services which have become quite essential in my day-to-day life. From a self-hosted cloud provider (Nextcloud) to in-house streaming service with automated request and downloads (Jellyfin). From a versatile smart home (Home Assistant) to an own Google Photo's (Immich). The possibilities are endless."
             },
             "skills": [
                 "docker",
@@ -203,7 +204,8 @@
                 "html",
                 "css",
                 "mui"
-            ]
+            ],
+            "github": "https://github.com/RupertDeRuyver/personal-website"
         },
 
         "finance-manager":
@@ -212,8 +214,8 @@
                 "glob": "Finance Manager"
             },
             "description": {
-                "nl": "Een persoonlijke financiële manager om mijn uitgaven en inkomsten bij te houden.",
-                "en": "A personal finance manager to keep track of my expenses and income."
+                "nl": "Een op maat gemaakte personal finance manager geïntegreerd met mijn bankrekening. Een mobile first frontend met React, een robuuste backend met Node.JS en een betrouwbare database met Postgres. Er wordt zelfs regex gebruikt om maximale data-extractie uit de API te garanderen. En dit alles wordt gehost op mijn Home Server. Omdat deze specifieke service niet (gratis) beschikbaar was op het internet, heb ik hem zelf gemaakt. Dat is de ingenieursmentaliteit!",
+                "en": "A tailored made personal finance manager with integration to my bank account. A mobile first frontend with React, a robust backend with Node.JS and a reliable database with Postgres. Even regex is used to ensure maximum data extraction from the API. And all is hosted on my Home Server. Since this specific service wasn't available on the internet (for free), I made it myself. That's the engineering mindset!"
             },
             "skills": [
                 "react",
@@ -222,8 +224,10 @@
                 "css",
                 "nodejs",
                 "sql",
-                "postgresql"
-            ]
+                "postgresql",
+                "regex"
+            ],
+            "github": "https://github.com/RupertDeRuyver/finance-manager"
         }
     },
 
@@ -573,6 +577,15 @@
             },
             "description": "",
             "type": "soft"
+        },
+
+        "assembly":
+        {
+            "name": {
+                "glob": "Assembly"
+            },
+            "description": "",
+            "type": "programming-language"
         }
     },
 

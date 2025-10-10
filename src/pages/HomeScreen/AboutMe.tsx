@@ -14,7 +14,7 @@ function AboutMe({ sections, content }: Props) {
       title={i18n.getString(sections.aboutme)!}
       icon={<Icon fontSize="large" sx={{ verticalAlign: "middle", mr: 2 }} />}
     >
-      <Typography color="text.primary" align="left">
+      <Typography color="text.primary" align="justify">
         {i18n.getString(content)}
       </Typography>
     </Section>
