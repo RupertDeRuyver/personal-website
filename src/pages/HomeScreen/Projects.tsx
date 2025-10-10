@@ -1,8 +1,9 @@
 import { CardContent, Grid, Card, Typography } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 import Section from "../../components/Section";
 import Skills from "../../components/Skills";
 import { i18n } from "../../I18nService";
+import Icon from "@mui/icons-material/StorageRounded";
 
 interface Project {
   name: Record<string, string>;
@@ -16,26 +17,29 @@ interface Props {
 }
 
 function Projects({ sections, projects }: Props) {
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
   return (
-    <Section title={i18n.getString(sections.projects)!}>
+    <Section
+      title={i18n.getString(sections.projects)!}
+      icon={<Icon fontSize="large" sx={{ verticalAlign: "middle", mr: 2 }} />}
+    >
       <Grid container spacing={2}>
         {Object.entries(projects).map(([id, project]) => {
           return (
             <Grid size={6}>
               <Card
                 variant="outlined"
-                onClick={() => navigate(`/projects/${id}`)}
+                //onClick={() => navigate(`/projects/${id}`)}
                 sx={{
                   bgcolor: "#f8f8f8ff",
-                  cursor: "pointer",
+                  //cursor: "pointer",
                   height: "20vw",
                   borderRadius: 7,
                   transition: "background-color 0.3s",
-                  "&:hover": {
-                    bgcolor: "#edededff",
-                  },
+                  //"&:hover": {
+                  //  bgcolor: "#edededff",
+                  //},
                 }}
               >
                 <CardContent>

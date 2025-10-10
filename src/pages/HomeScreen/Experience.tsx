@@ -23,7 +23,7 @@ function Experience({sections, experiences,}: Props) {
   return (
     <Section
       title={i18n.getString(sections.experience)!}
-      icon={<Icon fontSize="large" sx={{ verticalAlign: "middle", mr: 1 }} />}
+      icon={<Icon fontSize="large" sx={{ verticalAlign: "middle", mr: 2 }} />}
     >
       <Stack spacing={2} divider={<Divider />}>
         {Object.entries(experiences).map(([id, experience]) => {

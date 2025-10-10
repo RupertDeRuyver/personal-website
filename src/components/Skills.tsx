@@ -14,7 +14,7 @@ function Skills({ ids }: Props) {
       {skills
         .sort((a, b) => i18n.getString(a.name)!.localeCompare(i18n.getString(b.name)!))
         .map((skill) => {
-          return <Chip label={i18n.getString(skill.name)} onClick={() => {}} />;
+          return <Chip label={i18n.getString(skill.name)} />;
         })}
     </Stack>
   );

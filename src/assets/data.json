@@ -14,7 +14,7 @@
             "en": "Educations"
         },
         "experience": {
-            "nl": "Ervaringen",
+            "nl": "Ervaring",
             "en": "Experiences"
         },
         "projects": {
@@ -65,11 +65,11 @@
                 "angular",
                 "android",
                 "linux",
-                "git",
+                "github",
                 "pocketbase",
                 "regex",
                 "docker",
-                "kubernetes",
+                "gitlab",
                 "devops"
             ]
         },
@@ -418,10 +418,19 @@
             "type": "technical"
         },
 
-        "git":
+        "github":
         {
             "name": {
-                "glob": "Git"
+                "glob": "Github"
+            },
+            "description": "",
+            "type": "technical"
+        },
+
+        "gitlab":
+        {
+            "name": {
+                "glob": "GitLab"
             },
             "description": "",
             "type": "technical"

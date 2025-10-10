@@ -2,6 +2,7 @@ import { Stack, Divider } from "@mui/material";
 import ExperienceItem from "../../components/ExperienceItem";
 import Section from "../../components/Section";
 import { i18n } from "../../I18nService";
+import Icon from "@mui/icons-material/SchoolRounded";
 
 interface Education {
   name: Record<string, string>;
@@ -20,7 +21,10 @@ interface Props {
 function Education({ sections, educations }: Props) {
 
   return (
-    <Section title={i18n.getString(sections.education)!}>
+    <Section
+      title={i18n.getString(sections.education)!}
+      icon={<Icon fontSize="large" sx={{ verticalAlign: "middle", mr: 2 }} />}
+    >
       <Stack spacing={2} divider={<Divider />}>
         {Object.entries(educations).map(([id, education]) => {
           return (

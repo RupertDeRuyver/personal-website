@@ -1,5 +1,5 @@
 import { Box, Grid, Skeleton, Stack, Typography } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 import Skills from "./Skills";
 import { useState } from "react";
 
@@ -16,7 +16,7 @@ interface Props {
 
 function ExperienceItem({
   id,
-  category,
+  //category,
   name,
   institution,
   period,
@@ -24,23 +24,23 @@ function ExperienceItem({
   skills,
   icon,
 }: Props) {
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
   const [iconLoaded, setIconLoaded] = useState(false);
 
   return (
     <Box
-      onClick={() => {
-        navigate(`/${category}/${id}`);
-      }}
+      //onClick={() => {
+      //  navigate(`/${category}/${id}`);
+      //}}
       sx={{
-        cursor: "pointer",
+        //cursor: "pointer",
         p: 1,
-        "&:hover": {
-          "& .name": {
-            color: "#1976d2",
-            textDecoration: "underline",
-          },
-        },
+        //"&:hover": {
+        //  "& .name": {
+        //    color: "#1976d2",
+        //    textDecoration: "underline",
+        //  },
+        //},
       }}
     >
       <Grid container spacing={1}>
