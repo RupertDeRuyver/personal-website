@@ -1,6 +1,6 @@
 {
     "aboutme":
-        "Ik ben een gedreven student in het tweede jaar van mijn opleiding tot Industrieel Ingenieur (Informatica). In mijn vrije tijd ben ik veel bezig met de scouts en werken aan mijn home server. Door dat laatste heb ik ervaring met onder andere Docker, Linux en netwerken kunnen opdoen.",
+        "Ik ben een gedreven student in het derde jaar van mijn opleiding tot Industrieel Ingenieur (Informatica). In mijn vrije tijd ben ik veel bezig met de scouts en werken aan mijn home server. Door dat laatste heb ik ervaring met onder andere Docker, Linux en netwerken kunnen opdoen.",
 
     "educations": 
     {
@@ -68,7 +68,7 @@
             "icon": "scouts.jpg",
             "name": "Groepsleiding",
             "institution": "Scouts Zottegem",
-            "period": "2025 - heden",
+            "period": "2025 - present",
             "achievements": ["Responsible for the day-to-day management of our scouts group, which consists of over 250 members. This includes managing a team of 30+ leaders, and ensuring the smooth operation of our events and camps."],
             "skills": [
                 "leadership",
@@ -82,7 +82,7 @@
             "icon": "scouts.jpg",
             "name": "Leiding",
             "institution": "Scouts Zottegem",
-            "period": "2024 - heden",
+            "period": "2024 - present",
             "achievements": ["Every sunday morning I commit myself to entertain more than 30 kids. But there is more to being a leader than just that. I also help with the organisation of camps, hikes and other activities. Also communicating with parents is an important responsibility. Being a leader has taught me a lot about teamwork, responsibility and communication."],
             "skills": [
                 "teamwork",
@@ -96,7 +96,7 @@
             "icon": "redfed.png",
             "name": "Redder",
             "institution": "Stad Zottegem",
-            "period": "2023 - heden",
+            "period": "2023 - present",
             "achievements": []
         }
     },

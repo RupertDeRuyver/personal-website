@@ -1,6 +1,6 @@
 import { Paper, Typography } from "@mui/material";
 
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
+function Section({ title, children, icon }: { title: string; children: React.ReactNode, icon?: React.ReactNode }) {
     return (
       <Paper sx={{ p: 3, pt: 2, mb: 3, borderRadius: 4 }} elevation={2}>
         <Typography
@@ -9,6 +9,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
           color="text.primary"
           sx={{ mb: 2 }}
         >
+          {icon}
           {title}
         </Typography>
         {children}

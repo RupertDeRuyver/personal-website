@@ -1,6 +1,7 @@
 import { Stack, Divider } from "@mui/material";
 import ExperienceItem from "../../components/ExperienceItem";
 import Section from "../../components/Section";
+import Icon from '@mui/icons-material/Work';
 
 interface Experience {
   name: string;
@@ -14,7 +15,7 @@ interface Experience {
 
 function Experience({ experiences }: { experiences: Record<string, Experience> }) {
   return (
-    <Section title="Experience">
+    <Section title="Experience" icon={<Icon fontSize="large" sx={{ verticalAlign: 'middle', mr: 1 }} />} >
       <Stack spacing={2} divider={<Divider />}>
         {Object.entries(experiences).map(([id, experience]) => {
           return (

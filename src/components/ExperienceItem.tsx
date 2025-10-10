@@ -98,7 +98,11 @@ function ExperienceItem({
           {achievements && (
             <Stack sx={{ mt: 0.5 }}>
               {achievements.map((achievement) => (
-                <Typography color="text.primary" fontSize="1.0rem">
+                <Typography
+                  color="text.primary"
+                  fontSize="1.0rem"
+                  sx={{ whiteSpace: "pre-line" }}
+                >
                   {achievement}
                 </Typography>
               ))}
