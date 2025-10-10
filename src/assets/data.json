@@ -231,259 +231,337 @@
     {
         "python":
         {
-            "name": "Python",
+            "name": {
+                "glob": "Python"
+            },
             "description": "",
             "type": "programming-language"
         },
 
         "js":
         {
-            "name": "JavaScript",
+            "name": {
+                "glob": "JavaScript"
+            },
             "description": "",
             "type": "programming-language"
         },
 
         "ts":
         {
-            "name": "TypeScript",
+            "name": {
+                "glob": "TypeScript"
+            },
             "description": "",
             "type": "programming-language"
         },
 
         "java":
         {
-            "name": "Java",
+            "name": {
+                "glob": "Java"
+            },
             "description": "",
             "type": "programming-language"
         },
 
         "c":
         {
-            "name": "C",
+            "name": {
+                "glob": "C"
+            },
             "description": "",
             "type": "programming-language"
         },
 
         "cpp":
         {
-            "name": "C++",
+            "name": {
+                "glob": "C++"
+            },
             "description": "",
             "type": "programming-language"
         },
 
         "c-sharp":
         {
-            "name": "C#",
+            "name": {
+                "glob": "C#"
+            },
             "description": "",
             "type": "programming-language"
         },
 
         "kotlin":
         {
-            "name": "Kotlin",
+            "name": {
+                "glob": "Kotlin"
+            },
             "description": "",
             "type": "programming-language"
         },
 
         "sql":
         {
-            "name": "SQL",
+            "name": {
+                "glob": "SQL"
+            },
             "description": "",
             "type": "programming-language"
         },
 
         "bash":
         {
-            "name": "Bash",
+            "name": {
+                "glob": "Bash"
+            },
             "description": "",
             "type": "programming-language"
         },
 
         "html":
         {
-            "name": "HTML",
+            "name": {
+                "glob": "HTML"
+            },
             "description": "",
             "type": "programming-language"
         },
 
         "css":
         {
-            "name": "CSS",
+            "name": {
+                "glob": "CSS"
+            },
             "description": "",
             "type": "programming-language"
         },
 
         "bootstrap":
         {
-            "name": "Bootstrap",
+            "name": {
+                "glob": "Bootstrap"
+            },
             "description": "",
             "type": "technical"
         },
 
         "tailwind":
         {
-            "name": "Tailwind",
+            "name": {
+                "glob": "Tailwind"
+            },
             "description": "",
             "type": "technical"
         },
 
         "nodejs":
         {
-            "name": "Node.js",
+            "name": {
+                "glob": "Node.js"
+            },
             "description": "",
             "type": "technical"
         },
 
         "docker":
         {
-            "name": "Docker",
+            "name": {
+                "glob": "Docker"
+            },
             "description": "",
             "type": "technical"
         },
 
         "proxmox":
         {
-            "name": "Proxmox",
+            "name": {
+                "glob": "Proxmox"
+            },
             "description": "",
             "type": "technical"
         },
 
         "angular":
         {
-            "name": "Angular",
+            "name": {
+                "glob": "Angular"
+            },
             "description": "",
             "type": "technical"
         },
 
         "react":
         {
-            "name": "React",
+            "name": {
+                "glob": "React"
+            },
             "description": "",
             "type": "technical"
         },
 
         "android":
         {
-            "name": "Android Studio",
+            "name": {
+                "glob": "Android"
+            },
             "description": "",
             "type": "technical"
         },
 
         "linux":
         {
-            "name": "Linux",
+            "name": {
+                "glob": "Linux"
+            },
             "description": "",
             "type": "technical"
         },
 
         "git":
         {
-            "name": "Git",
+            "name": {
+                "glob": "Git"
+            },
             "description": "",
             "type": "technical"
         },
 
         "pocketbase":
         {
-            "name": "Pocketbase",
+            "name": {
+                "glob": "PocketBase"
+            },
             "description": "",
             "type": "technical"
         },
 
         "wireshark":
         {
-            "name": "Wireshark",
+            "name": {
+                "glob": "Wireshark"
+            },
             "description": "",
             "type": "technical"
         },
 
         "regex":
         {
-            "name": "Regex",
+            "name": {
+                "glob": "Regex"
+            },
             "description": "",
             "type": "technical"
         },
 
         "cloudflare":
         {
-            "name": "Cloudflare",
+            "name": {
+                "glob": "Cloudflare"
+            },
             "description": "",
             "type": "technical"
         },
 
         "teamwork":
         {
-            "name": "Teamwork",
+            "name": {
+                "glob": "Teamwork"
+            },
             "description": "",
             "type": "soft"
         },
 
         "postgresql":
         {
-            "name": "PostgreSQL",
+            "name": {
+                "glob": "PostgreSQL"
+            },
             "description": "",
             "type": "technical"
         },
 
         "kubernetes":
         {
-            "name": "Kubernetes",
+            "name": {
+                "glob": "Kubernetes"
+            },
             "description": "",
             "type": "technical"
         },
 
         "networking":
         {
-            "name": "Networking",
+            "name": {
+                "glob": "Networking"
+            },
             "description": "",
             "type": "technical"
         },
 
         "mui":
         {
-            "name": "Material UI",
+            "name": {
+                "glob": "MUI"
+            },
             "description": "",
             "type": "technical"
         },
 
         "communication":
         {
-            "name": "Communication",
+            "name": {
+                "en": "Communication",
+                "nl": "Communicatie"
+            },
             "description": "",
             "type": "soft"
         },
 
         "organization":
         {
-            "name": "Organization",
+            "name": {
+                "en": "Organization",
+                "nl": "Organisatie"
+            },
             "description": "",
             "type": "soft"
         },
 
         "devops":
         {
-            "name": "DevOps",
+            "name": {
+                "glob": "DevOps"
+            },
             "description": "",
             "type": "technical"
         },
 
         "leadership":
         {
-            "name": "Leadership",
+            "name": {
+                "en": "Leadership",
+                "nl": "Leiderschap"
+            },
             "description": "",
             "type": "soft"
         },
 
         "management":
         {
-            "name": "Management",
+            "name": {
+                "glob": "Management"
+            },
             "description": "",
             "type": "soft"
         },
 
         "problem-solving":
         {
-            "name": "Problem Solving",
+            "name": {
+                "en": "Problem-Solving",
+                "nl": "Probleemoplossend denken"
+            },
             "description": "",
             "type": "soft"
         }
@@ -493,17 +571,26 @@
     {
         "technical":
         {
-            "name": "Technical Skills"
+            "name": {
+                "nl": "Technische Vaardigheden",
+                "en": "Technical Skills"
+            }
         },
 
         "programming-language":
         {
-            "name": "Programming Languages"
+            "name": {
+                "nl": "Programmeertalen",
+                "en": "Programming Languages"
+            }
         },
 
         "soft":
         {
-            "name": "Soft Skills"
+            "name": {
+                "nl": "Zachte Vaardigheden",
+                "en": "Soft Skills"
+            }
         }
         
     }
