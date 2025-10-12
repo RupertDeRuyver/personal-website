@@ -1,12 +1,15 @@
-import { Avatar, Paper, Typography } from "@mui/material";
+import { Avatar, Paper, Skeleton, Typography } from "@mui/material";
 import ProfilePicture from "../../assets/profile-picture.jpg";
 import { i18n } from "../../I18nService";
+import { useState } from "react";
 
 interface Props {
     title: Record<string, string>;
 }
 
 function Header({ title }: Props) {
+
+  const [loading, setLoading] = useState(true);
 
   return (
     <Paper
@@ -21,15 +24,18 @@ function Header({ title }: Props) {
         alignItems: "center",
         justifyContent: "center",
         gap: 2,
-        p: 2
+        p: 2,
       }}
     >
+      {loading && <Skeleton variant="circular" width={250} height={250} />}
       <Avatar
         src={ProfilePicture}
         sx={{
           width: 250,
           height: 250,
+          display: loading ? "none" : "block",
         }}
+        onLoad={() => setLoading(false)}
       />
       <Typography variant="h1" fontWeight="bold" color="text.disabled">
         Rupert De Ruyver

@@ -45,7 +45,8 @@
                 "glob": "2023 - 2027"
             },
             "description": {
-                "glob": "Front- & Back-End Development\nLow Level Programming\nDesign Patterns"
+                "nl": "Ik zit momenteel in het derde jaar van mijn opleiding. Tijdens mijn studies heb ik al veel geleerd over vrijwel alle facetten van IT. In het begin lag de focus vooral op programmeren, waardoor ik ervaring heb opgedaan in frontend- en backenddevelopment, objectgeoriënteerd programmeren en zelfs low-level programmeren. Daarna werd de nadruk gelegd op samenwerken via Git en werken met Linux. Momenteel worden we ondergedompeld in DevOps, databases en netwerken. Aan het einde van de opleiding zal de focus liggen op machine learning en cybersecurity.",
+                "en": "I am currently in the third year of my studies. During my studies, I have already learned a lot about virtually all aspects of IT. In the beginning, the focus was mainly on programming, which gave me experience in front-end and back-end development, object-oriented programming and even low-level programming. After that, the emphasis shifted to collaborating via Git and working with Linux. Currently, we are immersed in DevOps, databases, and networks. At the end of the programme, the focus will be on machine learning and cybersecurity."
             },
             "skills": [
                 "python",
@@ -89,11 +90,12 @@
                 "glob": "2017 - 2023"
             },
             "description": {
-                "nl": "Voorzitter van de leerlingenraad\nLid van de schoolraad\nHoofdorganisator schoolfuif College TD 2023\nFinancieel verantwoordelijke van de laatsejaarsactiviteiten",
-                "en": "Head of the student council\nMember of the school council\nLead organizer College TD 2023\nFinancial manager for senior year activities"
+                "nl": "Tijdens mijn middelbare schoolperiode heb ik verschillende engagementen opgenomen. De laatste 4 jaar heb ik mij ingezet voor de leerlingenraad, waarvan de laatste 2 zelfs als voorzitter. Deze laatste 2 jaren was ik ook actief in de schoolraad. In mijn laatste jaar was ik samen met 2 vrienden ook de hoofdorganisator voor de schoolfuif College TD. Daarnaast beheerde ik ook alle financiën voor de laatstejaarsactiviteiten.",
+                "en": "During my high school years, I took on various commitments. For the last four years, I was involved in the student council, serving as chairperson for the last two years. During those last two years, I was also active in the school council. In my final year, together with two friends, I was the main organiser of the school party College TD. In addition, I managed all the finances for the senior activities."
             },
             "skills": [
-                "organization"
+                "organization",
+                "teamwork"
             ]
         }
     },
@@ -115,7 +117,7 @@
                 "en": "2025 - present"
             },
             "description": {
-                "nl": "Verantwoordelijk voor het dagelijks beheer van onze scouts groep, die uit meer dan 250 leden bestaat. Dit omvat het aansturen van een team van 40+ leiders en het waarborgen van een vlotte werking van onze evenementen en kampen.",
+                "nl": "Verantwoordelijk voor het dagelijks beheer van onze scoutsgroep, die uit meer dan 250 leden bestaat. Dit omvat het aansturen van een team van 40+ leiders en het waarborgen van een vlotte werking van onze evenementen en kampen.",
                 "en": "Responsible for the daily management of our scout group, which consists of more than 250 members. This includes leading a team of 40+ leaders and ensuring the smooth operation of our events and camps."
             },
             "skills": [
@@ -140,8 +142,8 @@
                 "en": "2024 - present"
             },
             "description": {
-                "nl":  "Elke zondagochtend zet ik mij in om meer dan 40 kinderen te entertainen. Maar leiding zijn is meer dan alleen dat. Ik help ook mee met de organisatie van kampen, trektochten en andere activiteiten. Ook het communiceren met ouders is een belangrijke verantwoordelijkheid. Leiding zijn heeft mij veel geleerd over teamwork, verantwoordelijkheid en communicatie.",
-                "en": "Every sunday morning I commit myself to entertain more than 40 kids. But there is more to being a leader than just that. I also help with the organisation of camps, hikes and other activities. Also communicating with parents is an important responsibility. Being a leader has taught me a lot about teamwork, responsibility and communication."
+                "nl":  "Elke zondagochtend zet ik mij in om 40+ kinderen te entertainen. Maar leiding zijn is meer dan alleen dat. Ik help ook mee met de organisatie van weekenden, kampen en andere activiteiten. Ook het communiceren met ouders is een belangrijke verantwoordelijkheid. Leiding zijn heeft mij veel geleerd over teamwork, verantwoordelijkheid en communicatie.",
+                "en": "Every sunday morning I commit myself to entertain 40+ kids. But there is more to being a leader than just that. I also help with the organisation of weekends, camps and other activities. Also communicating with parents is an important responsibility. Being a leader has taught me a lot about teamwork, responsibility and communication."
             },
             "skills": [
                 "teamwork",
@@ -195,15 +197,16 @@
                 "glob": "Personal Website"
             },
             "description": {
-                "nl": "De website die je momenteel bekijkt!",
-                "en": "The website you are currently viewing!"
+                "nl": "Dit is de website waarnaar je momenteel kijkt! Volledig gehost op mijn home server in een docker container, is dit een schaalbare en modulaire manier om mijn website aan te bieden. Gebouwd met React en mooi gemaakt dankzij Material UI. Al het verkeer passeert eerst langs Cloudflare vooraleer het via mijn reverse proxy bij de juiste container belandt.",
+                "en": "This is the website you are currently viewing! Fully hosted on my home server in a Docker container, this is a scalable and modular way to host my website. Built with React and beautifully designed thanks to Material UI. All traffic first passes through Cloudflare before reaching the correct container through my reverse proxy."
             },
             "skills": [
                 "react",
                 "ts",
                 "html",
                 "css",
-                "mui"
+                "mui",
+                "github"
             ],
             "github": "https://github.com/RupertDeRuyver/personal-website"
         },
@@ -225,7 +228,8 @@
                 "nodejs",
                 "sql",
                 "postgresql",
-                "regex"
+                "regex",
+                "github"
             ],
             "github": "https://github.com/RupertDeRuyver/finance-manager"
         }
