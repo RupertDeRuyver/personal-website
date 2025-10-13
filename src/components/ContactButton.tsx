@@ -20,7 +20,7 @@ const ContactButton = () => {
     {
       icon: <EmailIcon />,
       name: "Email",
-      link: "mailto:rupert@de-ruyver.com",
+      link: "mailto:rupertderuyver@gmail.com",
     },
     { icon: <PhoneIcon />, name: "Phone", link: "tel:+32492453704" },
   ];
