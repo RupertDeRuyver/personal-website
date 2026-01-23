@@ -8,7 +8,8 @@ import {
 } from "@mui/material";
 import { useMemo, useState } from "react";
 import { i18n } from "../I18nService";
-import type { Lang } from "../types";
+
+type Lang = string;
 
 interface Props {
   onChange?: (lang: Lang) => void;

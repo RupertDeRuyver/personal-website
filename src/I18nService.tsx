@@ -1,13 +1,13 @@
-const supportedLangs = ["nl", "en"];
-type Lang = (typeof supportedLangs)[number & keyof typeof supportedLangs];
+type Lang = string;
 
 export class I18nService {
   private lang: Lang = "nl";
+  private supportedLangs = ["nl", "en"];
 
   constructor() {
     const urlParams = new URLSearchParams(window.location.search);
     const urlLang = urlParams.get("lang") as string;
-    if (supportedLangs.includes(urlLang)) {
+    if (this.supportedLangs.includes(urlLang)) {
       this.lang = urlLang as Lang;
       urlParams.delete("lang");
       const cleanSearch = urlParams.toString();
@@ -17,7 +17,9 @@ export class I18nService {
   }
 
   setLang(lang: Lang) {
-    this.lang = lang;
+    if (this.supportedLangs.includes(lang)) {
+      this.lang = lang;
+    } 
   }
 
   getLang(): Lang {
@@ -25,7 +27,7 @@ export class I18nService {
   }
 
   getSupportedLangs(): Lang[] {
-    return supportedLangs;
+    return this.supportedLangs;
   }
 
   getString(options?: Record<Lang | "glob", string>): string | undefined {
