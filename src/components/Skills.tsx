@@ -66,7 +66,7 @@ function Skills({ ids }: Props) {
       {visibleSkills.map((skill) => {
         const label = i18n.getString(skill.name);
         const borderColor =
-          data.skill_types[skill.skillType]?.color ?? "grey.200";
+          data.skill_types[skill.skillType]?.color ?? "grey.600";
         const chipProps =
           skill.type === "featured"
             ? {
