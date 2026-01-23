@@ -4,8 +4,14 @@ import data from "../assets/data.json";
 import { i18n } from "../I18nService";
 
 type SkillDisplayType = "normal" | "featured" | "extra";
+type SkillCategory = keyof typeof data.skill_types;
 type SkillItem = { id: string; type: SkillDisplayType };
-type Skill = { id: string; type: SkillDisplayType; name: Record<string, string> };
+type Skill = {
+  id: string;
+  type: SkillDisplayType;
+  name: Record<string, string>;
+  skillType: SkillCategory;
+};
 
 interface Props {
   ids: SkillItem[];
@@ -24,6 +30,7 @@ function Skills({ ids }: Props) {
           id: skill.id,
           type: skill.type,
           name: skillData.name,
+          skillType: skillData.type as SkillCategory,
         };
       })
       .filter(Boolean) as Skill[];
@@ -41,6 +48,10 @@ function Skills({ ids }: Props) {
     .sort((a, b) => {
       const orderDiff = priority[a.type] - priority[b.type];
       if (orderDiff !== 0) return orderDiff;
+      const typeDiff =
+        data.skill_types[a.skillType]?.priority -
+        data.skill_types[b.skillType]?.priority;
+      if (typeDiff && typeDiff !== 0) return typeDiff;
       return i18n.getString(a.name)!.localeCompare(i18n.getString(b.name)!);
     });
 
@@ -54,18 +65,27 @@ function Skills({ ids }: Props) {
     >
       {visibleSkills.map((skill) => {
         const label = i18n.getString(skill.name);
+        const borderColor =
+          data.skill_types[skill.skillType]?.color ?? "grey.200";
         const chipProps =
           skill.type === "featured"
             ? {
-                color: "primary" as const,
                 variant: "filled" as const,
-                sx: { fontWeight: 600 },
+                sx: {
+                  fontWeight: 600,
+                  border: "1px solid",
+                  borderColor: "grey.200",
+                  bgcolor: borderColor,
+                  color: "white",
+                },
               }
             : {
                 variant: "filled" as const,
                 sx: {
                   bgcolor: "grey.200",
                   color: "grey.900",
+                  border: "1px solid",
+                  borderColor,
                 },
               };
         return <Chip key={skill.id} label={label} {...chipProps} />;
@@ -79,8 +99,8 @@ function Skills({ ids }: Props) {
           sx={{ ml: 1 }}
         >
           {showMore
-            ? (i18n.getString(data.strings.show_less))
-            : (i18n.getString(data.strings.show_more))}
+            ? i18n.getString(data.strings.show_less)
+            : i18n.getString(data.strings.show_more)}
         </Button>
       )}
     </Stack>

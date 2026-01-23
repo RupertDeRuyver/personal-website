@@ -782,7 +782,9 @@
             "name": {
                 "nl": "Technische Vaardigheden",
                 "en": "Technical Skills"
-            }
+            },
+            "color": "#b30000",
+            "priority": 1
         },
 
         "programming-language":
@@ -790,7 +792,9 @@
             "name": {
                 "nl": "Programmeertalen",
                 "en": "Programming Languages"
-            }
+            },
+            "color": "#ffb000",
+            "priority": 2
         },
 
         "soft":
@@ -798,7 +802,9 @@
             "name": {
                 "nl": "Zachte Vaardigheden",
                 "en": "Soft Skills"
-            }
+            },
+            "color": "#009903",
+            "priority": 0
         }
         
     },
