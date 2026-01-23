@@ -16,6 +16,14 @@ export class I18nService {
     this.lang = lang;
   }
 
+  getLang(): Lang {
+    return this.lang;
+  }
+
+  getSupportedLangs(): Lang[] {
+    return supportedLangs;
+  }
+
   getString(options?: Record<Lang | "glob", string>): string | undefined {
     if (!options) return undefined;
     return options["glob"] ?? options[this.lang];

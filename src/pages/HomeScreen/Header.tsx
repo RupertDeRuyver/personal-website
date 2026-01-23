@@ -1,14 +1,17 @@
-import { Avatar, Paper, Skeleton, Typography } from "@mui/material";
+import { Avatar, Box, Paper, Skeleton, Typography } from "@mui/material";
 import ProfilePicture from "../../assets/profile-picture.jpg";
 import { i18n } from "../../I18nService";
 import { useState } from "react";
+import LanguagePicker from "../../components/LanguagePicker";
+
+type Lang = ReturnType<typeof i18n.getLang>;
 
 interface Props {
-    title: Record<string, string>;
+  title: Record<string, string>;
+  onLangChange: (lang: Lang) => void;
 }
 
-function Header({ title }: Props) {
-
+function Header({ title, onLangChange }: Props) {
   const [loading, setLoading] = useState(true);
 
   return (
@@ -25,8 +28,12 @@ function Header({ title }: Props) {
         justifyContent: "center",
         gap: 2,
         p: 2,
+        position: "relative",
       }}
     >
+      <Box sx={{ position: "absolute", top: 16, right: 16 }}>
+        <LanguagePicker onChange={onLangChange} />
+      </Box>
       {loading && <Skeleton variant="circular" width={250} height={250} />}
       <Avatar
         src={ProfilePicture}
