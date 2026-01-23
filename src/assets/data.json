@@ -49,30 +49,102 @@
                 "en": "I am currently in the third year of my studies. During my studies, I have already learned a lot about virtually all aspects of IT. In the beginning, the focus was mainly on programming, which gave me experience in front-end and back-end development, object-oriented programming and even low-level programming. After that, the emphasis shifted to collaborating via Git and working with Linux. Currently, we are immersed in DevOps, databases, and networks. At the end of the programme, the focus will be on machine learning and cybersecurity."
             },
             "skills": [
-                "python",
-                "js",
-                "ts",
-                "java",
-                "c",
-                "cpp",
-                "c-sharp",
-                "kotlin",
-                "sql",
-                "bash",
-                "html",
-                "css",
-                "bootstrap",
-                "nodejs",
-                "angular",
-                "android",
-                "linux",
-                "github",
-                "pocketbase",
-                "regex",
-                "docker",
-                "gitlab",
-                "devops",
-                "assembly"
+                {
+                    "id": "python",
+                    "type": "normal"
+                },
+                {
+                    "id": "js",
+                    "type": "normal"
+                },
+                {
+                    "id": "ts",
+                    "type": "normal"
+                },
+                {
+                    "id": "java",
+                    "type": "normal"
+                },
+                {
+                    "id": "c",
+                    "type": "normal"
+                },
+                {
+                    "id": "cpp",
+                    "type": "normal"
+                },
+                {
+                    "id": "c-sharp",
+                    "type": "normal"
+                },
+                {
+                    "id": "kotlin",
+                    "type": "normal"
+                },
+                {
+                    "id": "sql",
+                    "type": "normal"
+                },
+                {
+                    "id": "bash",
+                    "type": "normal"
+                },
+                {
+                    "id": "html",
+                    "type": "normal"
+                },
+                {
+                    "id": "css",
+                    "type": "normal"
+                },
+                {
+                    "id": "bootstrap",
+                    "type": "normal"
+                },
+                {
+                    "id": "nodejs",
+                    "type": "normal"
+                },
+                {
+                    "id": "angular",
+                    "type": "normal"
+                },
+                {
+                    "id": "android",
+                    "type": "extra"
+                },
+                {
+                    "id": "linux",
+                    "type": "normal"
+                },
+                {
+                    "id": "github",
+                    "type": "normal"
+                },
+                {
+                    "id": "pocketbase",
+                    "type": "normal"
+                },
+                {
+                    "id": "regex",
+                    "type": "normal"
+                },
+                {
+                    "id": "docker",
+                    "type": "featured"
+                },
+                {
+                    "id": "gitlab",
+                    "type": "normal"
+                },
+                {
+                    "id": "devops",
+                    "type": "normal"
+                },
+                {
+                    "id": "assembly",
+                    "type": "normal"
+                }
             ]
         },
 
@@ -94,8 +166,14 @@
                 "en": "During my high school years, I took on various commitments. For the last four years, I was involved in the student council, serving as chairperson for the last two years. During those last two years, I was also active in the school council. In my final year, together with two friends, I was the main organiser of the school party College TD. In addition, I managed all the finances for the senior activities."
             },
             "skills": [
-                "organization",
-                "teamwork"
+                {
+                    "id": "organization",
+                    "type": "normal"
+                },
+                {
+                    "id": "teamwork",
+                    "type": "normal"
+                }
             ]
         }
     },
@@ -107,7 +185,7 @@
             "icon": "scouts.jpg",
             "name": {
                 "nl": "Groepsleiding",
-                "en": "Group Leadership Team"
+                "en": "Group Leadership"
             },
             "institution": {
                 "glob": "Scouts Zottegem"
@@ -121,9 +199,18 @@
                 "en": "Responsible for the daily management of our scout group, which consists of more than 250 members. This includes leading a team of 40+ leaders and ensuring the smooth operation of our events and camps."
             },
             "skills": [
-                "leadership",
-                "management",
-                "problem-solving"
+                {
+                    "id": "leadership",
+                    "type": "normal"
+                },
+                {
+                    "id": "management",
+                    "type": "normal"
+                },
+                {
+                    "id": "problem-solving",
+                    "type": "normal"
+                }
             ]
         },
 
@@ -142,13 +229,22 @@
                 "en": "2024 - present"
             },
             "description": {
-                "nl":  "Elke zondagochtend zet ik mij in om 40+ kinderen te entertainen. Maar leiding zijn is meer dan alleen dat. Ik help ook mee met de organisatie van weekenden, kampen en andere activiteiten. Ook het communiceren met ouders is een belangrijke verantwoordelijkheid. Leiding zijn heeft mij veel geleerd over teamwork, verantwoordelijkheid en communicatie.",
+                "nl": "Elke zondagochtend zet ik mij in om 40+ kinderen te entertainen. Maar leiding zijn is meer dan alleen dat. Ik help ook mee met de organisatie van weekenden, kampen en andere activiteiten. Ook het communiceren met ouders is een belangrijke verantwoordelijkheid. Leiding zijn heeft mij veel geleerd over teamwork, verantwoordelijkheid en communicatie.",
                 "en": "Every sunday morning I commit myself to entertain 40+ kids. But there is more to being a leader than just that. I also help with the organisation of weekends, camps and other activities. Also communicating with parents is an important responsibility. Being a leader has taught me a lot about teamwork, responsibility and communication."
             },
             "skills": [
-                "teamwork",
-                "communication",
-                "organization"
+                {
+                    "id": "teamwork",
+                    "type": "normal"
+                },
+                {
+                    "id": "communication",
+                    "type": "normal"
+                },
+                {
+                    "id": "organization",
+                    "type": "normal"
+                }
             ]
         },
 
@@ -182,12 +278,30 @@
                 "en": "An old pc turned into a fully fledged home server. Running multiple VM's and dozens of containers to keep up services which have become quite essential in my day-to-day life. From a self-hosted cloud provider (Nextcloud) to in-house streaming service with automated request and downloads (Jellyfin). From a versatile smart home (Home Assistant) to an own Google Photo's (Immich). The possibilities are endless."
             },
             "skills": [
-                "docker",
-                "proxmox",
-                "linux",
-                "cloudflare",
-                "networking",
-                "devops"
+                {
+                    "id": "docker",
+                    "type": "normal"
+                },
+                {
+                    "id": "proxmox",
+                    "type": "normal"
+                },
+                {
+                    "id": "linux",
+                    "type": "normal"
+                },
+                {
+                    "id": "cloudflare",
+                    "type": "normal"
+                },
+                {
+                    "id": "networking",
+                    "type": "normal"
+                },
+                {
+                    "id": "devops",
+                    "type": "normal"
+                }
             ]
         },
 
@@ -201,12 +315,30 @@
                 "en": "This is the website you are currently viewing! Fully hosted on my home server in a Docker container, this is a scalable and modular way to host my website. Built with React and beautifully designed thanks to Material UI. All traffic first passes through Cloudflare before reaching the correct container through my reverse proxy."
             },
             "skills": [
-                "react",
-                "ts",
-                "html",
-                "css",
-                "mui",
-                "github"
+                {
+                    "id": "react",
+                    "type": "normal"
+                },
+                {
+                    "id": "ts",
+                    "type": "normal"
+                },
+                {
+                    "id": "html",
+                    "type": "normal"
+                },
+                {
+                    "id": "css",
+                    "type": "normal"
+                },
+                {
+                    "id": "mui",
+                    "type": "normal"
+                },
+                {
+                    "id": "github",
+                    "type": "normal"
+                }
             ],
             "github": "https://github.com/RupertDeRuyver/personal-website"
         },
@@ -221,15 +353,42 @@
                 "en": "A tailored made personal finance manager with integration to my bank account. A mobile first frontend with React, a robust backend with Node.JS and a reliable database with Postgres. Even regex is used to ensure maximum data extraction from the API. And all is hosted on my Home Server. Since this specific service wasn't available on the internet (for free), I made it myself. That's the engineering mindset!"
             },
             "skills": [
-                "react",
-                "ts",
-                "html",
-                "css",
-                "nodejs",
-                "sql",
-                "postgresql",
-                "regex",
-                "github"
+                {
+                    "id": "react",
+                    "type": "normal"
+                },
+                {
+                    "id": "ts",
+                    "type": "normal"
+                },
+                {
+                    "id": "html",
+                    "type": "normal"
+                },
+                {
+                    "id": "css",
+                    "type": "normal"
+                },
+                {
+                    "id": "nodejs",
+                    "type": "normal"
+                },
+                {
+                    "id": "sql",
+                    "type": "normal"
+                },
+                {
+                    "id": "postgresql",
+                    "type": "normal"
+                },
+                {
+                    "id": "regex",
+                    "type": "normal"
+                },
+                {
+                    "id": "github",
+                    "type": "normal"
+                }
             ],
             "github": "https://github.com/RupertDeRuyver/finance-manager"
         }
@@ -619,5 +778,16 @@
             }
         }
         
+    },
+
+    "strings": {
+        "show_more": {
+            "en": "Show More",
+            "nl": "Toon Meer"
+        },
+        "show_less": {
+            "en": "Show Less",
+            "nl": "Toon Minder"
+        }
     }
 }
