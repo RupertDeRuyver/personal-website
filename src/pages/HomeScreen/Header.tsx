@@ -41,6 +41,7 @@ function Header({ title, onLangChange }: Props) {
           width: 250,
           height: 250,
           display: loading ? "none" : "block",
+          border: "2px solid rgba(255, 255, 255, 0.2)",
         }}
         onLoad={() => setLoading(false)}
       />

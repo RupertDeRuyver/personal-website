@@ -313,6 +313,10 @@
                 {
                     "id": "devops",
                     "type": "normal"
+                },
+                {
+                    "id": "monitoring",
+                    "type": "normal"
                 }
             ]
         },
@@ -769,6 +773,14 @@
             "name": {
                 "en": "Data structures",
                 "nl": "Data strucuren"
+            },
+            "description": "",
+            "type": "technical"
+        },
+
+        "monitoring": {
+            "name": {
+                "glob": "Monitoring"
             },
             "description": "",
             "type": "technical"
