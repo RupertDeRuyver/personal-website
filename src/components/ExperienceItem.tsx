@@ -1,6 +1,7 @@
 import { Box, Grid, Skeleton, Stack, Typography } from "@mui/material";
 //import { useNavigate } from "react-router-dom";
 import Skills from "./Skills";
+import type { SkillItem } from "../types";
 import { useState } from "react";
 
 interface Props {
@@ -10,7 +11,7 @@ interface Props {
   institution: string;
   period: string;
   description?: string;
-  skills?: string[];
+  skills?: SkillItem[];
   icon?: string;
 }
 

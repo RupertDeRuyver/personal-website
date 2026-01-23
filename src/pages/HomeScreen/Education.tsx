@@ -3,23 +3,14 @@ import ExperienceItem from "../../components/ExperienceItem";
 import Section from "../../components/Section";
 import { i18n } from "../../I18nService";
 import Icon from "@mui/icons-material/SchoolRounded";
-
-interface Education {
-  name: Record<string, string>;
-  institution: Record<string, string>;
-  period: Record<string, string>;
-  description?: Record<string, string> | undefined;
-  skills?: string[];
-  icon?: string;
-}
+import type { EducationData } from "../../types";
 
 interface Props {
   sections: Record<string, Record<string, string>>;
-  educations: Record<string, Education>;
+  educations: Record<string, EducationData>;
 }
 
 function Education({ sections, educations }: Props) {
-
   return (
     <Section
       title={i18n.getString(sections.education)!}

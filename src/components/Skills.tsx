@@ -2,10 +2,9 @@ import { useMemo, useState } from "react";
 import { Button, Chip, Stack } from "@mui/material";
 import data from "../assets/data.json";
 import { i18n } from "../I18nService";
+import type { SkillDisplayType, SkillItem } from "../types";
 
-type SkillDisplayType = "normal" | "featured" | "extra";
 type SkillCategory = keyof typeof data.skill_types;
-type SkillItem = { id: string; type: SkillDisplayType };
 type Skill = {
   id: string;
   type: SkillDisplayType;

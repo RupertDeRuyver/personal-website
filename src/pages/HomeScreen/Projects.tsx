@@ -1,21 +1,22 @@
-import { CardContent, Grid, Card, Typography, CardActions, Button } from "@mui/material";
+import {
+  CardContent,
+  Grid,
+  Card,
+  Typography,
+  CardActions,
+  Button,
+} from "@mui/material";
 //import { useNavigate } from "react-router-dom";
 import Section from "../../components/Section";
 import Skills from "../../components/Skills";
 import { i18n } from "../../I18nService";
 import Icon from "@mui/icons-material/StorageRounded";
 import GitHubIcon from "@mui/icons-material/GitHub";
-
-interface Project {
-  name: Record<string, string>;
-  description: Record<string, string>;
-  skills?: string[];
-  github?: string;
-}
+import type { ProjectData } from "../../types";
 
 interface Props {
   sections: Record<string, Record<string, string>>;
-  projects: Record<string, Project>;
+  projects: Record<string, ProjectData>;
 }
 
 function Projects({ sections, projects }: Props) {
@@ -27,7 +28,7 @@ function Projects({ sections, projects }: Props) {
       icon={<Icon fontSize="large" sx={{ verticalAlign: "middle", mr: 2 }} />}
     >
       <Grid container spacing={2}>
-        {Object.entries(projects).map(([ , project]) => {
+        {Object.entries(projects).map(([, project]) => {
           return (
             <Grid size={6}>
               <Card

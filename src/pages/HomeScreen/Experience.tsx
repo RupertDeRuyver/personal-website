@@ -3,23 +3,14 @@ import ExperienceItem from "../../components/ExperienceItem";
 import Section from "../../components/Section";
 import Icon from "@mui/icons-material/Work";
 import { i18n } from "../../I18nService";
-
-interface Experience {
-  name: Record<string, string>;
-  institution: Record<string, string>;
-  period: Record<string, string>;
-  description?: Record<string, string>;
-  skills?: string[];
-  icon?: string;
-}
+import type { ExperienceData } from "../../types";
 
 interface Props {
   sections: Record<string, Record<string, string>>;
-  experiences: Record<string, Experience>;
+  experiences: Record<string, ExperienceData>;
 }
 
-function Experience({sections, experiences,}: Props) {
-
+function Experience({ sections, experiences }: Props) {
   return (
     <Section
       title={i18n.getString(sections.experience)!}
