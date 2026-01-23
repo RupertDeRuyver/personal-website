@@ -9,6 +9,10 @@ export class I18nService {
     const urlLang = urlParams.get("lang") as string;
     if (supportedLangs.includes(urlLang)) {
       this.lang = urlLang as Lang;
+      urlParams.delete("lang");
+      const cleanSearch = urlParams.toString();
+      const cleanUrl = `${window.location.pathname}${cleanSearch ? `?${cleanSearch}` : ""}${window.location.hash}`;
+      window.history.replaceState({}, "", cleanUrl);
     }
   }
 
