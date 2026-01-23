@@ -51,63 +51,63 @@
             "skills": [
                 {
                     "id": "python",
-                    "type": "normal"
+                    "type": "extra"
                 },
                 {
                     "id": "js",
-                    "type": "normal"
+                    "type": "extra"
                 },
                 {
                     "id": "ts",
-                    "type": "normal"
+                    "type": "extra"
                 },
                 {
                     "id": "java",
-                    "type": "normal"
+                    "type": "extra"
                 },
                 {
                     "id": "c",
-                    "type": "normal"
+                    "type": "extra"
                 },
                 {
                     "id": "cpp",
-                    "type": "normal"
+                    "type": "extra"
                 },
                 {
                     "id": "c-sharp",
-                    "type": "normal"
+                    "type": "extra"
                 },
                 {
                     "id": "kotlin",
-                    "type": "normal"
+                    "type": "extra"
                 },
                 {
                     "id": "sql",
-                    "type": "normal"
+                    "type": "extra"
                 },
                 {
                     "id": "bash",
-                    "type": "normal"
+                    "type": "extra"
                 },
                 {
                     "id": "html",
-                    "type": "normal"
+                    "type": "extra"
                 },
                 {
                     "id": "css",
-                    "type": "normal"
+                    "type": "extra"
                 },
                 {
                     "id": "bootstrap",
-                    "type": "normal"
+                    "type": "extra"
                 },
                 {
                     "id": "nodejs",
-                    "type": "normal"
+                    "type": "extra"
                 },
                 {
                     "id": "angular",
-                    "type": "normal"
+                    "type": "extra"
                 },
                 {
                     "id": "android",
@@ -118,31 +118,43 @@
                     "type": "normal"
                 },
                 {
-                    "id": "github",
+                    "id": "git",
                     "type": "normal"
                 },
                 {
                     "id": "pocketbase",
-                    "type": "normal"
+                    "type": "extra"
                 },
                 {
                     "id": "regex",
-                    "type": "normal"
+                    "type": "extra"
                 },
                 {
                     "id": "docker",
-                    "type": "featured"
-                },
-                {
-                    "id": "gitlab",
-                    "type": "normal"
+                    "type": "extra"
                 },
                 {
                     "id": "devops",
-                    "type": "normal"
+                    "type": "featured"
                 },
                 {
                     "id": "assembly",
+                    "type": "extra"
+                },
+                {
+                    "id": "networking",
+                    "type": "normal"
+                },
+                {
+                    "id": "programming",
+                    "type": "normal"
+                },
+                {
+                    "id": "kubernetes",
+                    "type": "normal"
+                },
+                {
+                    "id": "data_structures",
                     "type": "normal"
                 }
             ]
@@ -168,7 +180,7 @@
             "skills": [
                 {
                     "id": "organization",
-                    "type": "normal"
+                    "type": "featured"
                 },
                 {
                     "id": "teamwork",
@@ -201,7 +213,7 @@
             "skills": [
                 {
                     "id": "leadership",
-                    "type": "normal"
+                    "type": "featured"
                 },
                 {
                     "id": "management",
@@ -235,7 +247,7 @@
             "skills": [
                 {
                     "id": "teamwork",
-                    "type": "normal"
+                    "type": "featured"
                 },
                 {
                     "id": "communication",
@@ -280,11 +292,11 @@
             "skills": [
                 {
                     "id": "docker",
-                    "type": "normal"
+                    "type": "featured"
                 },
                 {
                     "id": "proxmox",
-                    "type": "normal"
+                    "type": "featured"
                 },
                 {
                     "id": "linux",
@@ -317,7 +329,7 @@
             "skills": [
                 {
                     "id": "react",
-                    "type": "normal"
+                    "type": "featured"
                 },
                 {
                     "id": "ts",
@@ -336,7 +348,7 @@
                     "type": "normal"
                 },
                 {
-                    "id": "github",
+                    "id": "git",
                     "type": "normal"
                 }
             ],
@@ -386,7 +398,7 @@
                     "type": "normal"
                 },
                 {
-                    "id": "github",
+                    "id": "git",
                     "type": "normal"
                 }
             ],
@@ -585,19 +597,10 @@
             "type": "technical"
         },
 
-        "github":
+        "git":
         {
             "name": {
-                "glob": "Github"
-            },
-            "description": "",
-            "type": "technical"
-        },
-
-        "gitlab":
-        {
-            "name": {
-                "glob": "GitLab"
+                "glob": "Git"
             },
             "description": "",
             "type": "technical"
@@ -749,6 +752,26 @@
             },
             "description": "",
             "type": "programming-language"
+        },
+
+        "programming":
+        {
+            "name": {
+                "en": "Programming",
+                "nl": "Programmeren"
+            },
+            "description": "",
+            "type": "technical"
+        },
+        
+        "data_structures":
+        {
+            "name": {
+                "en": "Data structures",
+                "nl": "Data strucuren"
+            },
+            "description": "",
+            "type": "technical"
         }
     },
 
