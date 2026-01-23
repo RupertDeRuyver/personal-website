@@ -365,8 +365,8 @@
                 "glob": "Finance Manager"
             },
             "description": {
-                "nl": "Een op maat gemaakte personal finance manager geïntegreerd met mijn bankrekening. Een mobile first frontend met React, een robuuste backend met Node.JS en een betrouwbare database met Postgres. Er wordt zelfs regex gebruikt om maximale data-extractie uit de API te garanderen. En dit alles wordt gehost op mijn Home Server. Omdat deze specifieke service niet (gratis) beschikbaar was op het internet, heb ik hem zelf gemaakt. Dat is de ingenieursmentaliteit!",
-                "en": "A tailored made personal finance manager with integration to my bank account. A mobile first frontend with React, a robust backend with Node.JS and a reliable database with Postgres. Even regex is used to ensure maximum data extraction from the API. And all is hosted on my Home Server. Since this specific service wasn't available on the internet (for free), I made it myself. That's the engineering mindset!"
+                "nl": "Een op maat gemaakte personal finance manager geïntegreerd met mijn bankrekening. Een mobile first frontend met React, een robuuste backend met Node.js en een betrouwbare database met Postgres. Er wordt zelfs regex gebruikt om maximale data-extractie uit de API te garanderen. En dit alles wordt gehost op mijn Home Server. Omdat deze specifieke service niet (gratis) beschikbaar was op het internet, heb ik hem zelf gemaakt. Dat is de ingenieursmentaliteit!",
+                "en": "A tailored made personal finance manager with integration to my bank account. A mobile first frontend with React, a robust backend with Node.js and a reliable database with Postgres. Even regex is used to ensure maximum data extraction from the API. And all is hosted on my Home Server. Since this specific service wasn't available on the internet (for free), I made it myself. That's the engineering mindset!"
             },
             "skills": [
                 {
@@ -787,7 +787,7 @@
         }
     },
 
-    "skill_types":
+    "skill_categories":
     {
         "technical":
         {

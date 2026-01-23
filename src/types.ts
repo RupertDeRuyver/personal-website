@@ -1,31 +1,43 @@
+import data from "./assets/data.json";
+
+// Language types
+export type LanguageDictionary = Record<string, string>;
+
 // Skill types
-export type SkillDisplayType = "normal" | "featured" | "extra";
-export type SkillItem = { id: string; type: SkillDisplayType };
+export type SkillType = "normal" | "featured" | "extra";
+export type SkillItemSimple = { id: string; type: SkillType };
+export type SkillCategory = keyof typeof data.skill_categories;
+export type SkillItemExtended = {
+  id: string;
+  type: SkillType;
+  name: LanguageDictionary;
+  skillType: SkillCategory;
+};
 
 // Experience type
-export interface ExperienceData {
-  name: Record<string, string>;
-  institution: Record<string, string>;
-  period: Record<string, string>;
-  description?: Record<string, string>;
-  skills?: SkillItem[];
+export interface ExperienceType {
+  name: LanguageDictionary;
+  institution: LanguageDictionary;
+  period: LanguageDictionary;
+  description?: LanguageDictionary;
+  skills?: SkillItemSimple[];
   icon?: string;
 }
 
 // Education type
-export interface EducationData {
-  name: Record<string, string>;
-  institution: Record<string, string>;
-  period: Record<string, string>;
-  description?: Record<string, string>;
-  skills?: SkillItem[];
+export interface EducationType {
+  name: LanguageDictionary;
+  institution: LanguageDictionary;
+  period: LanguageDictionary;
+  description?: LanguageDictionary;
+  skills?: SkillItemSimple[];
   icon?: string;
 }
 
 // Project type
-export interface ProjectData {
-  name: Record<string, string>;
-  description: Record<string, string>;
-  skills?: SkillItem[];
+export interface ProjectType {
+  name: LanguageDictionary;
+  description: LanguageDictionary;
+  skills?: SkillItemSimple[];
   github?: string;
 }

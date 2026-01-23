@@ -2,18 +2,10 @@ import { useMemo, useState } from "react";
 import { Button, Chip, Stack } from "@mui/material";
 import data from "../assets/data.json";
 import { i18n } from "../I18nService";
-import type { SkillDisplayType, SkillItem } from "../types";
-
-type SkillCategory = keyof typeof data.skill_types;
-type Skill = {
-  id: string;
-  type: SkillDisplayType;
-  name: Record<string, string>;
-  skillType: SkillCategory;
-};
+import type { SkillType, SkillItemSimple, SkillCategory, SkillItemExtended } from "../types";
 
 interface Props {
-  ids: SkillItem[];
+  ids: SkillItemSimple[];
 }
 
 function Skills({ ids }: Props) {
@@ -32,11 +24,11 @@ function Skills({ ids }: Props) {
           skillType: skillData.type as SkillCategory,
         };
       })
-      .filter(Boolean) as Skill[];
+      .filter(Boolean) as SkillItemExtended[];
   }, [ids]);
 
   const hasMore = skills.some((skill) => skill.type === "extra");
-  const priority: Record<SkillDisplayType, number> = {
+  const priority: Record<SkillType, number> = {
     featured: 0,
     normal: 1,
     extra: 2,
@@ -48,8 +40,8 @@ function Skills({ ids }: Props) {
       const orderDiff = priority[a.type] - priority[b.type];
       if (orderDiff !== 0) return orderDiff;
       const typeDiff =
-        data.skill_types[a.skillType]?.priority -
-        data.skill_types[b.skillType]?.priority;
+        data.skill_categories[a.skillType]?.priority -
+        data.skill_categories[b.skillType]?.priority;
       if (typeDiff && typeDiff !== 0) return typeDiff;
       return i18n.getString(a.name)!.localeCompare(i18n.getString(b.name)!);
     });
@@ -65,7 +57,7 @@ function Skills({ ids }: Props) {
       {visibleSkills.map((skill) => {
         const label = i18n.getString(skill.name);
         const borderColor =
-          data.skill_types[skill.skillType]?.color ?? "grey.600";
+          data.skill_categories[skill.skillType]?.color ?? "grey.600";
         const chipProps =
           skill.type === "featured"
             ? {

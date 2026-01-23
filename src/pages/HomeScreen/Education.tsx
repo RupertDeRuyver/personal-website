@@ -3,11 +3,11 @@ import ExperienceItem from "../../components/ExperienceItem";
 import Section from "../../components/Section";
 import { i18n } from "../../I18nService";
 import Icon from "@mui/icons-material/SchoolRounded";
-import type { EducationData } from "../../types";
+import type { EducationType } from "../../types";
 
 interface Props {
   sections: Record<string, Record<string, string>>;
-  educations: Record<string, EducationData>;
+  educations: Record<string, EducationType>;
 }
 
 function Education({ sections, educations }: Props) {

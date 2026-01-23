@@ -12,11 +12,11 @@ import Skills from "../../components/Skills";
 import { i18n } from "../../I18nService";
 import Icon from "@mui/icons-material/StorageRounded";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import type { ProjectData } from "../../types";
+import type { ProjectType } from "../../types";
 
 interface Props {
   sections: Record<string, Record<string, string>>;
-  projects: Record<string, ProjectData>;
+  projects: Record<string, ProjectType>;
 }
 
 function Projects({ sections, projects }: Props) {

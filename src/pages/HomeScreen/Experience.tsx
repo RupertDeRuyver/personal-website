@@ -3,11 +3,11 @@ import ExperienceItem from "../../components/ExperienceItem";
 import Section from "../../components/Section";
 import Icon from "@mui/icons-material/Work";
 import { i18n } from "../../I18nService";
-import type { ExperienceData } from "../../types";
+import type { ExperienceType } from "../../types";
 
 interface Props {
   sections: Record<string, Record<string, string>>;
-  experiences: Record<string, ExperienceData>;
+  experiences: Record<string, ExperienceType>;
 }
 
 function Experience({ sections, experiences }: Props) {
