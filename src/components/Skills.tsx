@@ -55,28 +55,32 @@ function Skills({ ids }: Props) {
       sx={{ my: 1 }}
     >
       {visibleSkills.map((skill) => {
+
         const label = i18n.getString(skill.name);
-        const borderColor =
-          data.skill_categories[skill.skillType]?.color ?? "grey.600";
+        const borderColor = data.skill_categories[skill.skillType]?.color ?? "grey.600";
+        const bgcolor = "grey.200";
+
         const chipProps =
           skill.type === "featured"
             ? {
+                // Skill type == featured (filled chip)
                 variant: "filled" as const,
                 sx: {
                   fontWeight: 600,
                   border: "1px solid",
-                  borderColor: "grey.200",
+                  borderColor: bgcolor,
                   bgcolor: borderColor,
                   color: "white",
                 },
               }
             : {
+                // Skill type == normal (bordered chip)
                 variant: "filled" as const,
                 sx: {
-                  bgcolor: "grey.200",
                   color: "grey.900",
                   border: "1px solid",
                   borderColor,
+                  bgcolor,
                 },
               };
         return <Chip key={skill.id} label={label} {...chipProps} />;
