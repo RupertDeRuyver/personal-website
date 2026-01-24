@@ -143,7 +143,7 @@
                 },
                 {
                     "id": "networking",
-                    "type": "normal"
+                    "type": "featured"
                 },
                 {
                     "id": "programming",
@@ -156,6 +156,10 @@
                 {
                     "id": "data_structures",
                     "type": "normal"
+                },
+                {
+                    "id": "postgresql",
+                    "type": "extra"
                 }
             ]
         },
@@ -586,7 +590,7 @@
         "android":
         {
             "name": {
-                "glob": "Android"
+                "glob": "Android Studio"
             },
             "description": "",
             "type": "technical"
@@ -676,7 +680,8 @@
         "networking":
         {
             "name": {
-                "glob": "Networking"
+                "en": "Networking",
+                "nl": "Netwerken"
             },
             "description": "",
             "type": "technical"
@@ -771,8 +776,8 @@
         "data_structures":
         {
             "name": {
-                "en": "Data structures",
-                "nl": "Data strucuren"
+                "en": "Data Structures",
+                "nl": "Data Strucuren"
             },
             "description": "",
             "type": "technical"
