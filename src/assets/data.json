@@ -196,6 +196,40 @@
 
     "experiences": 
     {
+        "bachelorproef": 
+        {
+            "icon": "jan-de-nul.jpg",
+            "name": {
+                "nl": "Bachelorproef",
+                "en": "Bachelor's thesis"
+            },
+            "institution": {
+                "glob": "Jan De Nul"
+            },
+            "period": {
+                "nl": "feb. 2026 - heden",
+                "en": "feb. 2026 - present"
+            },
+            "description": {
+                "nl": "In samenwerking met Jan De Nul werk ik in een team van vijf aan mijn bachelorproef \"Automated recognition of oyster spats on substrate\". We ontwikkelen een systeem dat via computer vision en machine learning jonge oesters uit de Belgische Noordzee detecteert en classificeert. Deze automatisering vervangt tijdrovend manueel telwerk en levert data ter ondersteuning van de oesterrif-herstelprojecten in onze Noordzee.",
+                "en": "In collaboration with Jan De Nul, I am working in a team of five on my bachelor's thesis \"Automated recognition of oyster spats on substrate.\" We are developing a system that uses computer vision and machine learning to detect and classify young oysters from the Belgian North Sea. This automation replaces time-consuming manual counting and provides data to support oyster reef restoration projects in our North Sea."
+            },
+            "skills": [
+                {
+                    "id": "machine-learning",
+                    "type": "featured"
+                },
+                {
+                    "id": "computer-vision",
+                    "type": "featured"
+                },
+                {
+                    "id": "teamwork",
+                    "type": "normal"
+                }
+            ]
+        },
+
         "groepsleiding": 
         {
             "icon": "scouts.jpg",
@@ -320,6 +354,10 @@
                 },
                 {
                     "id": "monitoring",
+                    "type": "normal"
+                },
+                {
+                    "id": "traefik",
                     "type": "normal"
                 }
             ]
@@ -786,6 +824,30 @@
         "monitoring": {
             "name": {
                 "glob": "Monitoring"
+            },
+            "description": "",
+            "type": "technical"
+        },
+
+        "traefik": {
+            "name": {
+                "glob": "Traefik"
+            },
+            "description": "",
+            "type": "technical"
+        },
+
+        "machine-learning": {
+            "name": {
+                "glob": "Machine Learning"
+            },
+            "description": "",
+            "type": "technical"
+        },
+
+        "computer-vision": {
+            "name": {
+                "glob": "Computer Vision"
             },
             "description": "",
             "type": "technical"
