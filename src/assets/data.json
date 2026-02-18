@@ -4,6 +4,38 @@
         "en": "Computer Science Engineering Student"
     },
 
+    "contact": {
+        "email": {
+            "name": {
+                "glob": "Email"
+            },
+            "label": "rupertderuyver@gmail.com",
+            "link": "mailto:rupertderuyver@gmail.com"
+        },
+        "phone": {
+            "name": {
+                "nl": "Telefoon",
+                "en": "Phone"
+            },
+            "label": "+32 492 45 37 04",
+            "link": "tel:+32492453704"
+        },
+        "linkedin": {
+            "name": {
+                "glob": "LinkedIn"
+            },
+            "label": "linkedin.com/in/rupert-deruyver",
+            "link": "https://www.linkedin.com/in/rupert-deruyver/"
+        },
+        "github": {
+            "name": {
+                "glob": "GitHub"
+            },
+            "label": "github.com/RupertDeRuyver",
+            "link": "https://github.com/RupertDeRuyver"
+        }
+    },
+
     "sections": {
         "aboutme": {
             "nl": "Over mij",

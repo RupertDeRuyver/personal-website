@@ -4,25 +4,31 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import PhoneIcon from "@mui/icons-material/Phone";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
+import data from "../assets/data.json";
+import { i18n } from "../I18nService";
 
 const ContactButton = () => {
   const actions = [
     {
       icon: <LinkedInIcon />,
-      name: "LinkedIn",
-      link: "https://www.linkedin.com/in/rupert-deruyver/",
+      name: i18n.getString(data.contact.linkedin.name),
+      link: data.contact.linkedin.link,
     },
     {
       icon: <GitHubIcon />,
-      name: "GitHub",
-      link: "https://github.com/RupertDeRuyver",
+      name: i18n.getString(data.contact.github.name),
+      link: data.contact.github.link,
     },
     {
       icon: <EmailIcon />,
-      name: "rupertderuyver@gmail.com",
-      link: "mailto:rupertderuyver@gmail.com",
+      name: data.contact.email.label,
+      link: data.contact.email.link,
     },
-    { icon: <PhoneIcon />, name: "+32 492 45 37 04", link: "tel:+32492453704" },
+    {
+      icon: <PhoneIcon />,
+      name: data.contact.phone.label,
+      link: data.contact.phone.link,
+    },
   ];
 
   return (
