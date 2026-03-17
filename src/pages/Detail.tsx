@@ -17,7 +17,17 @@ function Detail() {
   // @ts-expect-error: TS couldn't verify that type is a key of data and id is a key of data[type]
   const item = data[type][id];
   return (
-    <Box sx={{ maxWidth: 900, mx: "auto", p: 2, pt: 6 }}>
+    <Box
+      sx={{
+        maxWidth: 900,
+        mx: "auto",
+        p: 2,
+        pt: 6,
+        "& h1, & h2, & h3, & h4, & h5, & h6": {
+          fontWeight: 400,
+        },
+      }}
+    >
       <Section title={i18n.getString(item.name)!}>
         <Markdown>{markdown}</Markdown>
       </Section>
