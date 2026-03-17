@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Box } from "@mui/material";
 import Header from "./HomeScreen/Header";
 import data from "../assets/data.json";
