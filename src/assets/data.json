@@ -1,7 +1,7 @@
 {
     "title": {
-        "nl": "Student Industrieel Ingenieur Informatica",
-        "en": "Computer Science Engineering Student"
+        "nl": "Cyber Security Student @ Universiteit Gent",
+        "en": "Cyber Security Student @ Ghent University"
     },
 
     "contact": {
@@ -11,14 +11,6 @@
             },
             "label": "rupertderuyver@gmail.com",
             "link": "mailto:rupertderuyver@gmail.com"
-        },
-        "phone": {
-            "name": {
-                "nl": "Telefoon",
-                "en": "Phone"
-            },
-            "label": "+32 492 45 37 04",
-            "link": "tel:+32492453704"
         },
         "linkedin": {
             "name": {
@@ -62,19 +54,40 @@
 
     "educations": 
     {
-        "ugent":
+        "ugent-ma":
         {
             "icon": "ugent.png",
             "name": {
-                "nl": "Industrieel Ingenieur Informatica",
-                "en": "Computer Science Engineering"
+                "nl": "Machelor of Science in de industriële wetenschappen: informatica",
+                "en": "Master of Science in Information Engineering Technology"
             },
             "institution": {
                 "nl": "Universiteit Gent",
                 "en": "Ghent University"
             },
             "period": {
-                "glob": "2023 - 2027"
+                "glob": "2026 - 2027"
+            },
+            "description": {
+                "nl": "",
+                "en": ""
+            },
+            "skills": []
+        },
+
+        "ugent-ba":
+        {
+            "icon": "ugent.png",
+            "name": {
+                "nl": "Bachelor of Science in de industriële wetenschappen: informatica",
+                "en": "Bachelor of Science in Information Engineering Technology"
+            },
+            "institution": {
+                "nl": "Universiteit Gent",
+                "en": "Ghent University"
+            },
+            "period": {
+                "glob": "2023 - 2026"
             },
             "description": {
                 "nl": "Ik zit momenteel in het derde jaar van mijn opleiding. Tijdens mijn studies heb ik al veel geleerd over vrijwel alle facetten van IT. In het begin lag de focus vooral op programmeren, waardoor ik ervaring heb opgedaan in frontend- en backenddevelopment, objectgeoriënteerd programmeren en zelfs low-level programmeren. Daarna werd de nadruk gelegd op samenwerken via Git en werken met Linux. Momenteel worden we ondergedompeld in DevOps, databases en netwerken. Aan het einde van de opleiding zal de focus liggen op machine learning en cybersecurity.",
@@ -239,8 +252,8 @@
                 "glob": "Jan De Nul"
             },
             "period": {
-                "nl": "feb. 2026 - heden",
-                "en": "feb. 2026 - present"
+                "nl": "feb. 2026 - mei 2026",
+                "en": "feb. 2026 - may 2026"
             },
             "description": {
                 "nl": "In samenwerking met Jan De Nul werk ik in een team van vijf aan mijn bachelorproef \"Automated recognition of oyster spats on substrate\". We ontwikkelen een systeem dat via computer vision en machine learning jonge oesters uit de Belgische Noordzee detecteert en classificeert. Deze automatisering vervangt tijdrovend manueel telwerk en levert data ter ondersteuning van de oesterrif-herstelprojecten in onze Noordzee.",

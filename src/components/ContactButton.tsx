@@ -23,12 +23,7 @@ const ContactButton = () => {
       icon: <EmailIcon />,
       name: data.contact.email.label,
       link: data.contact.email.link,
-    },
-    {
-      icon: <PhoneIcon />,
-      name: data.contact.phone.label,
-      link: data.contact.phone.link,
-    },
+    }
   ];
 
   return (
