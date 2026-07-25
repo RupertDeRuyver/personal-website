@@ -33,16 +33,16 @@ function Projects({ sections, projects }: Props) {
             <Grid size={6}>
               <Card
                 variant="outlined"
-                onClick={() => navigate(`/projects/${id}`)}
+                //onClick={() => navigate(`/projects/${id}`)}
                 sx={{
                   bgcolor: "#f8f8f8ff",
-                  cursor: "pointer",
+                  //cursor: "pointer",
                   height: "25vw",
                   borderRadius: 7,
                   transition: "background-color 0.3s",
-                  "&:hover": {
-                    bgcolor: "#edededff",
-                  },
+                  //"&:hover": {
+                  //  bgcolor: "#edededff",
+                  //},
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",

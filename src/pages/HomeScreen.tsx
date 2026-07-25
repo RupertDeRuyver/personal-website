@@ -27,14 +27,14 @@ function HomeScreen() {
         <Box sx={{ maxWidth: 900, mx: "auto", p: 2, pt: 6 }}>
           <AboutMe sections={data.sections} content={data.aboutme} />
 
-          <Experience
-            sections={data.sections}
-            experiences={data.experiences as any}
-          />
-
           <Education
             sections={data.sections}
             educations={data.educations as any}
+          />
+
+          <Experience
+            sections={data.sections}
+            experiences={data.experiences as any}
           />
 
           <Projects sections={data.sections} projects={data.projects as any} />

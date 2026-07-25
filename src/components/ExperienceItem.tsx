@@ -100,7 +100,7 @@ function ExperienceItem({
               <Typography
                 color="text.primary"
                 fontSize="1.0rem"
-                align="justify"
+                align="left"
                 sx={{ whiteSpace: "pre-line" }}
               >
                 {description}

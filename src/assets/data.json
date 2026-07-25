@@ -48,8 +48,8 @@
     },
 
     "aboutme": {
-        "nl": "Ik ben Rupert, een gedreven student in het derde jaar van mijn opleiding tot Industrieel Ingenieur Informatica. Naast student ben ik ook scoutsleider. Ik ben leergierig en sterk gepassioneerd door technologie. Daardoor werk ik in mijn vrije tijd graag aan enkele projecten – het grootste en meest complexe is ongetwijfeld mijn home server. Zo daag ik mezelf uit om steeds te blijven groeien en blijf ik op de hoogte van de nieuwste technologieën.",
-        "en": "I'm Rupert, a motivated third-year student majoring in Computer Science Engineering. In addition to being a student, I am also a scout leader. I am eager to learn and passionate about technology. That's why I like to work on projects in my spare time – the largest and most complex of which is undoubtedly my home server. This challenges me to keep growing and stay up to date with the latest technologies."
+        "nl": "Ik ben Rupert, een gedreven masterstudent in het laatste jaar van mijn opleiding tot Industrieel Ingenieur Informatica met een sterke passie voor cyber security. Naast student ben ik ook scoutsleider. Ik ben leergierig en sterk gepassioneerd door technologie. Daardoor werk ik in mijn vrije tijd graag aan enkele projecten – het grootste en meest complexe is ongetwijfeld mijn home server. Zo daag ik mezelf uit om steeds te blijven groeien en blijf ik op de hoogte van de nieuwste technologieën.",
+        "en": "I'm Rupert, a motivated master's student in the final year of my degree in Information Engineering Technology with a strong passion for cybersecurity. In addition to being a student, I am also a scout leader. I am eager to learn and passionate about technology. That's why I like to work on projects in my spare time – the largest and most complex of which is undoubtedly my home server. This challenges me to keep growing and stay up to date with the latest technologies."
     },
 
     "educations": 
@@ -58,7 +58,7 @@
         {
             "icon": "ugent.png",
             "name": {
-                "nl": "Machelor of Science in de industriële wetenschappen: informatica",
+                "nl": "Master of Science in de industriële wetenschappen: informatica",
                 "en": "Master of Science in Information Engineering Technology"
             },
             "institution": {
@@ -69,10 +69,19 @@
                 "glob": "2026 - 2027"
             },
             "description": {
-                "nl": "",
-                "en": ""
+                "nl": "Tijdens de masteropleiding staan belangrijke moderne concepten zoals machine learning, systeembeheer, en vooral cyber security centraal. Met vakken als 'Beveiliging van netwerken en computers', 'Softwarehacking en -protectie' en 'Netwerkhacking en -bescherming' werd een diepgaande kennis aangebracht over cyber security. Door deze concepten hands-on aan te leren door middel van regelmatige labo's worden we volledig klaargestoomd om de cyber space van morgen te helpen beveiligen.",
+                "en": "The Master's programme focuses on key modern concepts such as machine learning, systems administration and, above all, cyber security. Through courses such as ‘Network and Computer Security’, ‘Software Hacking and Protection’ and ‘Network Hacking and Protection’, we gained an in-depth understanding of cyber security. By learning these concepts through hands-on experience in frequent lab sessions, we are fully equipped to help secure the cyberspace of tomorrow."
             },
-            "skills": []
+            "skills": [
+                {
+                    "id": "machine-learning",
+                    "type": "normal"
+                },
+                {
+                    "id": "cybersecurity",
+                    "type": "featured"
+                }
+            ]
         },
 
         "ugent-ba":
@@ -90,8 +99,8 @@
                 "glob": "2023 - 2026"
             },
             "description": {
-                "nl": "Ik zit momenteel in het derde jaar van mijn opleiding. Tijdens mijn studies heb ik al veel geleerd over vrijwel alle facetten van IT. In het begin lag de focus vooral op programmeren, waardoor ik ervaring heb opgedaan in frontend- en backenddevelopment, objectgeoriënteerd programmeren en zelfs low-level programmeren. Daarna werd de nadruk gelegd op samenwerken via Git en werken met Linux. Momenteel worden we ondergedompeld in DevOps, databases en netwerken. Aan het einde van de opleiding zal de focus liggen op machine learning en cybersecurity.",
-                "en": "I am currently in the third year of my studies. During my studies, I have already learned a lot about virtually all aspects of IT. In the beginning, the focus was mainly on programming, which gave me experience in front-end and back-end development, object-oriented programming and even low-level programming. After that, the emphasis shifted to collaborating via Git and working with Linux. Currently, we are immersed in DevOps, databases, and networks. At the end of the programme, the focus will be on machine learning and cybersecurity."
+                "nl": "Tijdens deze opleiding leerde ik veel over vrijwel alle facetten van IT. In het begin lag de focus vooral op programmeren, waardoor ik ervaring heb opgedaan in frontend- en backenddevelopment, objectgeoriënteerd programmeren en zelfs low-level programmeren. Daarna werd de nadruk gelegd op samenwerken via Git, werken met Linux en database-architecturen. Tot slot werden we ondergedompeld in DevOps, algoritmen en netwerken, en werd al een mooie basis gelegd voor de masteropleiding die focust op machine learning en cybersecurity.",
+                "en": "During this degree, I learnt a great deal about virtually every aspect of IT. Initially, the focus was mainly on programming, which allowed me to gain experience in front-end and back-end development, object-oriented programming and even low-level programming. After that, the emphasis shifted to collaborating using Git, working with Linux and database architectures. Finally, we were immersed in DevOps, algorithms and networking, which laid a solid foundation for the master's programme, which focuses on machine learning and cybersecurity."
             },
             "skills": [
                 {
@@ -444,56 +453,6 @@
                 }
             ],
             "github": "https://github.com/RupertDeRuyver/personal-website"
-        },
-
-        "finance-manager":
-        {
-            "name": {
-                "glob": "Finance Manager"
-            },
-            "description": {
-                "nl": "Een op maat gemaakte personal finance manager geïntegreerd met mijn bankrekening. Een mobile first frontend met React, een robuuste backend met Node.js en een betrouwbare database met Postgres. Er wordt zelfs regex gebruikt om maximale data-extractie uit de API te garanderen. En dit alles wordt gehost op mijn Home Server. Omdat deze specifieke service niet (gratis) beschikbaar was op het internet, heb ik hem zelf gemaakt. Dat is de ingenieursmentaliteit!",
-                "en": "A tailored made personal finance manager with integration to my bank account. A mobile first frontend with React, a robust backend with Node.js and a reliable database with Postgres. Even regex is used to ensure maximum data extraction from the API. And all is hosted on my Home Server. Since this specific service wasn't available on the internet (for free), I made it myself. That's the engineering mindset!"
-            },
-            "skills": [
-                {
-                    "id": "react",
-                    "type": "normal"
-                },
-                {
-                    "id": "ts",
-                    "type": "normal"
-                },
-                {
-                    "id": "html",
-                    "type": "normal"
-                },
-                {
-                    "id": "css",
-                    "type": "normal"
-                },
-                {
-                    "id": "nodejs",
-                    "type": "normal"
-                },
-                {
-                    "id": "sql",
-                    "type": "normal"
-                },
-                {
-                    "id": "postgresql",
-                    "type": "normal"
-                },
-                {
-                    "id": "regex",
-                    "type": "normal"
-                },
-                {
-                    "id": "git",
-                    "type": "normal"
-                }
-            ],
-            "github": "https://github.com/RupertDeRuyver/finance-manager"
         }
     },
 
@@ -893,6 +852,15 @@
         "computer-vision": {
             "name": {
                 "glob": "Computer Vision"
+            },
+            "description": "",
+            "type": "technical"
+        },
+
+        "cybersecurity": {
+            "name": {
+                "nl": "Cyber Security",
+                "en": "Cybersecurity"
             },
             "description": "",
             "type": "technical"
