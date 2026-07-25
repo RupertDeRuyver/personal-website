@@ -1,7 +1,6 @@
 import { Box, SpeedDial, SpeedDialAction } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import PhoneIcon from "@mui/icons-material/Phone";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import data from "../assets/data.json";

@@ -6,7 +6,7 @@ import {
   CardActions,
   Button,
 } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 import Section from "../../components/Section";
 import Skills from "../../components/Skills";
 import { i18n } from "../../I18nService";
@@ -20,7 +20,7 @@ interface Props {
 }
 
 function Projects({ sections, projects }: Props) {
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
   return (
     <Section
@@ -28,7 +28,7 @@ function Projects({ sections, projects }: Props) {
       icon={<Icon fontSize="large" sx={{ verticalAlign: "middle", mr: 2 }} />}
     >
       <Grid container spacing={2}>
-        {Object.entries(projects).map(([id, project]) => {
+        {Object.entries(projects).map(([_id, project]) => {
           return (
             <Grid size={6}>
               <Card
