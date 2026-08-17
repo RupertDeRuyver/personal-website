@@ -384,7 +384,7 @@
             "skills": [
                 {
                     "id": "docker",
-                    "type": "featured"
+                    "type": "normal"
                 },
                 {
                     "id": "proxmox",
@@ -392,7 +392,7 @@
                 },
                 {
                     "id": "linux",
-                    "type": "normal"
+                    "type": "extra"
                 },
                 {
                     "id": "cloudflare",
@@ -404,15 +404,35 @@
                 },
                 {
                     "id": "devops",
-                    "type": "normal"
+                    "type": "extra"
                 },
                 {
                     "id": "monitoring",
-                    "type": "normal"
+                    "type": "extra"
                 },
                 {
                     "id": "traefik",
                     "type": "normal"
+                },
+                {
+                    "id": "grafana",
+                    "type": "extra"
+                },
+                {
+                    "id": "prometheus",
+                    "type": "extra"
+                },
+                {
+                    "id": "ansible",
+                    "type": "featured"
+                },
+                {
+                    "id": "gitops",
+                    "type": "normal"
+                },
+                {
+                    "id": "infrastructure-as-code",
+                    "type": "extra"
                 }
             ]
         },
@@ -861,6 +881,46 @@
             "name": {
                 "nl": "Cyber Security",
                 "en": "Cybersecurity"
+            },
+            "description": "",
+            "type": "technical"
+        },
+
+        "grafana": {
+            "name": {
+                "glob": "Grafana"
+            },
+            "description": "",
+            "type": "technical"
+        },
+
+        "prometheus": {
+            "name": {
+                "glob": "Prometheus"
+            },
+            "description": "",
+            "type": "technical"
+        },
+
+        "ansible": {
+            "name": {
+                "glob": "Ansible"
+            },
+            "description": "",
+            "type": "technical"
+        },
+
+        "gitops": {
+            "name": {
+                "glob": "GitOps"
+            },
+            "description": "",
+            "type": "technical"
+        },
+
+        "infrastructure-as-code": {
+            "name": {
+                "glob": "Infrastructure as Code"
             },
             "description": "",
             "type": "technical"
