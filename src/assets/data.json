@@ -88,8 +88,8 @@
         {
             "icon": "ugent.png",
             "name": {
-                "nl": "Bachelor of Science in de industriële wetenschappen: informatica, cum laude",
-                "en": "Bachelor of Science in Information Engineering Technology, cum laude"
+                "nl": "Bachelor of Science in de industriële wetenschappen: informatica",
+                "en": "Bachelor of Science in Information Engineering Technology"
             },
             "institution": {
                 "nl": "Universiteit Gent",
@@ -102,6 +102,11 @@
                 "nl": "Tijdens deze opleiding leerde ik veel over vrijwel alle facetten van IT. In het begin lag de focus vooral op programmeren, waardoor ik ervaring heb opgedaan in frontend- en backenddevelopment, objectgeoriënteerd programmeren en zelfs low-level programmeren. Daarna werd de nadruk gelegd op samenwerken via Git, werken met Linux en database-architecturen. Tot slot werden we ondergedompeld in DevOps, algoritmen en netwerken, en werd al een mooie basis gelegd voor de masteropleiding die focust op machine learning en cybersecurity.",
                 "en": "During this degree, I learnt a great deal about virtually every aspect of IT. Initially, the focus was mainly on programming, which allowed me to gain experience in front-end and back-end development, object-oriented programming and even low-level programming. After that, the emphasis shifted to collaborating using Git, working with Linux and database architectures. Finally, we were immersed in DevOps, algorithms and networking, which laid a solid foundation for the master's programme, which focuses on machine learning and cybersecurity."
             },
+            "achievements": [
+                {
+                    "id": "cum-laude"
+                }
+            ],
             "skills": [
                 {
                     "id": "python",
@@ -453,6 +458,16 @@
                 }
             ],
             "github": "https://github.com/RupertDeRuyver/personal-website"
+        }
+    },
+
+    "achievements":
+    {
+        "cum-laude":
+        {
+            "name": {
+                "glob": "Cum Laude"
+            }
         }
     },
 

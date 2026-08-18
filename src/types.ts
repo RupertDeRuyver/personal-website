@@ -14,12 +14,16 @@ export type SkillItemExtended = {
   skillType: SkillCategory;
 };
 
+// Achievement types
+export type AchievementSimple = { id: string };
+
 // Experience type
 export interface ExperienceType {
   name: LanguageDictionary;
   institution: LanguageDictionary;
   period: LanguageDictionary;
   description?: LanguageDictionary;
+  achievements?: AchievementSimple[];
   skills?: SkillItemSimple[];
   icon?: string;
 }
@@ -30,6 +34,7 @@ export interface EducationType {
   institution: LanguageDictionary;
   period: LanguageDictionary;
   description?: LanguageDictionary;
+  achievements?: AchievementSimple[];
   skills?: SkillItemSimple[];
   icon?: string;
 }
@@ -38,6 +43,7 @@ export interface EducationType {
 export interface ProjectType {
   name: LanguageDictionary;
   description: LanguageDictionary;
+  achievements?: AchievementSimple[];
   skills?: SkillItemSimple[];
   github?: string;
 }

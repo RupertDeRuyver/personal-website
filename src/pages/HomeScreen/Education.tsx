@@ -26,6 +26,7 @@ function Education({ sections, educations }: Props) {
               institution={i18n.getString(education.institution)!}
               period={i18n.getString(education.period)!}
               description={i18n.getString(education.description)}
+              achievements={education.achievements}
               skills={education.skills}
               icon={education.icon}
             />

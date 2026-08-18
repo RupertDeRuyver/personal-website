@@ -26,6 +26,7 @@ function Experience({ sections, experiences }: Props) {
               institution={i18n.getString(experience.institution)!}
               period={i18n.getString(experience.period)!}
               description={i18n.getString(experience.description)}
+              achievements={experience.achievements}
               skills={experience.skills}
               icon={experience.icon}
             />

@@ -11,6 +11,7 @@ interface Props {
   institution: string;
   period: string;
   description?: string;
+  achievements?: { id: string }[];
   skills?: SkillItemSimple[];
   icon?: string;
 }
@@ -22,6 +23,7 @@ function ExperienceItem({
   institution,
   period,
   description,
+  achievements,
   skills,
   icon,
 }: Props) {
@@ -93,7 +95,9 @@ function ExperienceItem({
             >
               {period}
             </Typography>
-            {skills && <Skills ids={skills} />}
+            {(skills || achievements) && (
+              <Skills ids={skills || []} achievements={achievements} />
+            )}
           </Stack>
           {description && (
             <Stack sx={{ mt: 0.5 }}>
